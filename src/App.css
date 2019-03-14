@@ -1,0 +1,32 @@
+.App{
+  font-size: 16px;
+}
+.nav{
+  float:right;
+  padding-top:4vh;
+  padding-right: 10vw;
+}
+.link{
+  color: white;
+  text-decoration: none;
+  padding:10px;
+}
+.logo{
+  padding-top:2.5vh;
+  padding-left:2.5vh;
+  height:5vh;
+}
+.activeLink{
+  color:rgb(15, 73, 129);
+}
+.nvbr{
+  position: absolute;
+  width: 100vw;
+  height: 10vh;
+  background: rgba(255,255,255,0.4);
+}
+.comp{
+  position: absolute;
+  top:0vh;
+  left:0vw;
+}
