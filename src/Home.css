@@ -16,6 +16,22 @@ p{
     color: white;
     font-size: 4.5em;
 }
+.imgs{
+    height:5vw;
+    width:5vw;
+}
+.imgDiv{
+    display: inline-block;
+    position: relative;
+    margin:0;
+    height: 5vw;
+    width: 5vw;
+    padding:5vw;
+    text-align: center;
+}
+.taglineImgs{
+    padding-left:40vw;
+}
 .intro{
     width:100%;
     background:rgb(207, 207, 207);
@@ -26,5 +42,4 @@ p{
     text-align:center;
     padding-top:10vh;
     padding-bottom: 10vh;
-
 }
