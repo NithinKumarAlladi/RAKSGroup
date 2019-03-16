@@ -17,14 +17,6 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <div className="comp" >
-            <Route exact path='/' component={Home} />
-            <Route path='/about/:id' component={About} />
-            <Route path='/usstaffing' component={UsStaffing} />
-            <Route path='/itservices' component={ItServices} />
-            <Route path='/contact' component={Contact} />
-            <Route path='/career' component={Career} />
-          </div>
           <div className="nvbr" >
             <img className="logo" src={logo} />
             <nav className="nav" >
@@ -35,6 +27,14 @@ class App extends Component {
               <NavLink to="/contact" activeClassName="activeLink" className="link" >CONTACT</NavLink>
               <NavLink to="/career" activeClassName="activeLink" className="link" >CAREER</NavLink>
             </nav>
+          </div>
+          <div className="comp" >
+            <Route exact path='/' component={Home} />
+            <Route path='/about/:id' component={About} />
+            <Route path='/usstaffing' component={UsStaffing} />
+            <Route path='/itservices' component={ItServices} />
+            <Route path='/contact' component={Contact} />
+            <Route path='/career' component={Career} />
           </div>
         </div>
       </Router>

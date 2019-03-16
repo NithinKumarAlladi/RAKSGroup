@@ -1,5 +1,6 @@
 .App{
   font-size: 16px;
+  overflow-x: hidden;
 }
 .nav{
   float:right;
@@ -23,10 +24,8 @@
   position: absolute;
   width: 100vw;
   height: 10vh;
-  background: rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.1);
 }
 .comp{
-  position: absolute;
-  top:0vh;
-  left:0vw;
+  
 }

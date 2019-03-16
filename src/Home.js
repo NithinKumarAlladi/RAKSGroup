@@ -12,23 +12,24 @@ export default class Home extends Component {
             <Router>
                 <div>
                     <div className="home" >
-                        <p className="heading" >Staffing <br /> {text}</p>
+                        <p className="heading" >Staffing <br /> <span style={{ fontSize: "1em" }} >{text}</span></p>
                     </div>
                     <div className="taglineImgs" >
                         <section className="imgDiv" >
-                            <img className="imgs" src={people} />
+                            <img className="imgs" alt="This is some alt content" src={people} />
                             <p>People</p>
                         </section>
                         <section className="imgDiv" >
-                            <img className="imgs" src={process} />
-                            <p>People</p>
+                            <img className="imgs" alt="This is some alt content" src={process} />
+                            <p>Process</p>
                         </section>
                         <section className="imgDiv" >
-                            <img className="imgs" src={product} />
-                            <p>People</p>
+                            <img className="imgs" alt="This is some alt content" src={product} />
+                            <p>Product</p>
                         </section>
                     </div>
                     <div className="intro" >
+                        <p className="weAre" > We <br /> Are</p>
                         <p className="introP" >RAKS Group striving to be a leader in the provision of staffing services and qualified talent across an array of industries. We specialize in contract,
                              contract-to-hire and full time placement staffing services and our staffing and talent resources extend throughout the United States.</p>
                     </div>
