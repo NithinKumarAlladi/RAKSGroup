@@ -1,6 +1,7 @@
 .App{
   font-size: 16px;
   overflow-x: hidden;
+  width:100vw;
 }
 .nav{
   float:right;
@@ -12,20 +13,23 @@
   text-decoration: none;
   padding:10px;
 }
+.link:hover{
+  font-size: 1.2em;
+}
 .logo{
   padding-top:2.5vh;
   padding-left:2.5vh;
   height:5vh;
 }
 .activeLink{
-  color:rgb(15, 73, 129);
+  color:#f0a07c;
+  font-size:1.2em;
 }
+
 .nvbr{
   position: absolute;
   width: 100vw;
   height: 10vh;
   background: rgba(255,255,255,0.1);
 }
-.comp{
-  
-}
+/* rgb(15, 73, 129); */
