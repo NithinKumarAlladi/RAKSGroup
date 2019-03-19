@@ -13,7 +13,7 @@ export default class Home extends Component {
             <Router>
                 <div>
                     <div className="home" >
-                        <p className="heading" >Staffing <br /> <span style={{ fontSize: "1em",color:"#f0a07c" }} >{text}</span></p>
+                        <p className="heading" >Staffing <br /> <span style={{ fontSize: "1em", color: "#f9d342" }} >{text}</span></p>
                     </div>
                     <div className="taglineImgs" >
                         <section className="imgDiv" >
@@ -51,14 +51,28 @@ export default class Home extends Component {
                     <div className="servicesDiv" >
                         <p className="servicesP" >Services</p>
                         <div className="servicesBL" >
-                            <NavLink to="/" exact activeClassName="activeLink" className="servicesLink" >US Staffing</NavLink>
-                            <NavLink to="/" exact activeClassName="activeLink" className="servicesLink" >CONSULTING</NavLink>
-                            <NavLink to="/" exact activeClassName="activeLink" className="servicesLink" >PRODUCT DEVELOPMENT</NavLink>
-                            <NavLink to="/" exact activeClassName="activeLink" className="servicesLink" >APPLICATION DEVELOPMENT</NavLink>
-                            <NavLink to="/" exact activeClassName="activeLink" className="servicesLink" >MOBILE APP DEVELOPMENT</NavLink>
-                            <NavLink to="/" exact activeClassName="activeLink" className="servicesLink" >TRAINING</NavLink>
-
+                            <NavLink to="/usstaffing" exact className="servicesLink" >US Staffing</NavLink>
+                            <NavLink to="/itservices/:consulting" exact className="servicesLink" >CONSULTING</NavLink>
+                            <NavLink to="/itservices/:pDev" exact className="servicesLink" >PRODUCT DEVELOPMENT</NavLink>
+                            <NavLink to="/itservices/:aDev" exact className="servicesLink" >APPLICATION DEVELOPMENT</NavLink>
+                            <br />
+                            <br />
+                            <br />
+                            <NavLink to="/itservices/:mDev" exact className="servicesLink" >MOBILE APP DEVELOPMENT</NavLink>
+                            <NavLink to="/itservices/:training" exact className="servicesLink" >TRAINING</NavLink>
                         </div>
+                    </div>
+                    <div className="careerDiv" >
+                        <p className="careerP" >
+                            <span style={{ fontSize: "4em", }} >Career</span><br /><br />
+                            We thrive to create an ambience that is best suitable for our employees.
+                        <br />Integrity, values and determination are the qualities of our team which unites us and makes RAKS Group LLc.</p>
+                        <br />
+                        <br />
+                        <NavLink to="/career" className="servicesLink" >VIEW CURRENT OPENINGS</NavLink>
+                        <br />
+                        <br />
+                        <br />
                     </div>
                 </div>
             </Router>

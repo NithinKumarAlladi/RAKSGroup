@@ -10,7 +10,7 @@ import Contact from './Contact';
 import ItServices from './ItServices';
 import Career from './Career';
 import logo from "./imgs/logo.png"
-import Nav from './Nav';
+
 
 class App extends Component {
   render() {
@@ -23,7 +23,7 @@ class App extends Component {
               <NavLink to="/" exact activeClassName="activeLink" className="link" >HOME</NavLink>
               <NavLink to="/about/:null" activeClassName="activeLink" className="link" >ABOUT</NavLink>
               <NavLink to="/usstaffing" activeClassName="activeLink" className="link" >US STAFFING</NavLink>
-              <NavLink to="/itservices" activeClassName="activeLink" className="link" >IT SERVICES</NavLink>
+              <NavLink to="/itservices/:null" activeClassName="activeLink" className="link" >IT SERVICES</NavLink>
               <NavLink to="/contact" activeClassName="activeLink" className="link" >CONTACT</NavLink>
               <NavLink to="/career" activeClassName="activeLink" className="link" >CAREER</NavLink>
             </nav>
@@ -32,7 +32,7 @@ class App extends Component {
             <Route exact path='/' component={Home} />
             <Route path='/about/:id' component={About} />
             <Route path='/usstaffing' component={UsStaffing} />
-            <Route path='/itservices' component={ItServices} />
+            <Route path='/itservices/:id' component={ItServices} />
             <Route path='/contact' component={Contact} />
             <Route path='/career' component={Career} />
           </div>

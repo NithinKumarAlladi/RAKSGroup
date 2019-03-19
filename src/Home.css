@@ -14,7 +14,7 @@ p{
 }
 .heading{
     vertical-align: center;
-    color: #f0a07c;
+    color: #f9d342;
     font-size: 7em;
 }
 .imgs{
@@ -34,7 +34,7 @@ p{
 .intro{
     width:100%;
     height:40vh;
-    background-image: linear-gradient(60deg, #f0a07c 40%, #292926 40%);
+    background-image: linear-gradient(60deg, #f9d342 40%, #292926 40%);
     display: flex;
     align-items: center;
 }
@@ -51,12 +51,12 @@ p{
     text-align:center;
     padding:5%;
     font-size: 1.5em;
-    color: #f0a07c;
+    color: #f9d342;
 }
 .mvDiv{
     height:60vh;
     width: 100%;
-    background-image: linear-gradient(-60deg, #f0a07c 50%, #292926 50%);
+    background-image: linear-gradient(-60deg, #f9d342 50%, #292926 50%);
 }
 .mDiv{
     width:50%;
@@ -72,7 +72,7 @@ p{
 .missionP{
     width:30vw;
     font-size: 1.5em;
-    color: #f0a07c;
+    color: #f9d342;
     position: relative;
     top: 40%;
     left: 50%;
@@ -101,7 +101,7 @@ p{
 .servicesDiv{
     height:35vh;
     width:100%;
-    background-image: linear-gradient(60deg, #f0a07c 30%, #292926 30%);
+    background-image: linear-gradient(60deg, #f9d342 30%, #292926 30%);
     align-items: center;
     display: flex;
 }
@@ -112,12 +112,27 @@ p{
 }
 .servicesBL{
     width:70%;
+    text-align: center
 }
 .servicesLink{
     text-decoration: none;
-    border: 2px solid #f0a07c ;
+    border: 2px solid #f9d342 ;
     border-radius: 2px;
     padding:10px;
+    margin:1.5em;
+    color:#f9d342;
+    font-size: 1em;
 }
-
-/* rgb(240,160,124) */
+.servicesLink:hover{
+    color: #292926;
+    background: #f9d342;
+}
+.careerDiv{
+    background: #292926;
+    text-align: center;
+}
+.careerP{
+    color: #f9d342;
+    font-size:1em;
+    padding-top:2vh;
+}
