@@ -11,7 +11,7 @@ export default class Nav extends Component {
                     <img className="logo" src={logo} />
                     <nav className="nav" >
                         <NavLink to="/" exact activeClassName="activeLink" className="link" >HOME</NavLink>
-                        <NavLink to="/about/:null" activeClassName="activeLink" className="link" >ABOUT</NavLink>
+                        <NavLink to="/about" activeClassName="activeLink" className="link" >ABOUT</NavLink>
                         <NavLink to="/usstaffing" activeClassName="activeLink" className="link" >US STAFFING</NavLink>
                         <NavLink to="/itservices" activeClassName="activeLink" className="link" >IT SERVICES</NavLink>
                         <NavLink to="/contact" activeClassName="activeLink" className="link" >CONTACT</NavLink>

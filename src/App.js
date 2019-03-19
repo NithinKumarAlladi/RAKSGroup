@@ -21,7 +21,7 @@ class App extends Component {
             <img className="logo" src={logo} />
             <nav className="nav" >
               <NavLink to="/" exact activeClassName="activeLink" className="link" >HOME</NavLink>
-              <NavLink to="/about/:null" activeClassName="activeLink" className="link" >ABOUT</NavLink>
+              <NavLink to="/about" activeClassName="activeLink" className="link" >ABOUT US</NavLink>
               <NavLink to="/usstaffing" activeClassName="activeLink" className="link" >US STAFFING</NavLink>
               <NavLink to="/itservices/:null" activeClassName="activeLink" className="link" >IT SERVICES</NavLink>
               <NavLink to="/contact" activeClassName="activeLink" className="link" >CONTACT</NavLink>
@@ -30,9 +30,9 @@ class App extends Component {
           </div>
           <div className="comp" >
             <Route exact path='/' component={Home} />
-            <Route path='/about/:id' component={About} />
+            <Route path='/about/:id?' component={About} />
             <Route path='/usstaffing' component={UsStaffing} />
-            <Route path='/itservices/:id' component={ItServices} />
+            <Route path='/itservices/:id?' component={ItServices} />
             <Route path='/contact' component={Contact} />
             <Route path='/career' component={Career} />
           </div>

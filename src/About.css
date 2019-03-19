@@ -1,3 +1,15 @@
-.abt{
-    color:black;
+.about{
+    width:100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutP1{
+    vertical-align: center;
+    color: #292926;
+    font-size:2em;
 }
