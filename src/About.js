@@ -9,11 +9,24 @@ export default class About extends Component {
         this.setState({
             id: id,
         })
+        document.getElementById("nvbr").className = document.getElementById('nvbr') + " abtNvbr";
+        document.getElementById('nav').childNodes.forEach((ele) => {
+            if (ele.className.includes('activeLink')) {
+            } else {
+                ele.className = "link abtLink";
+            }
+        })
     }
     render() {
         return (
             <div className="about" >
-                <p className="aboutP1" >RAKS Group striving to be a leader in the provision of staffing services and qualified talent across an array of industries.</p>
+                <span className="aboutH" >ABOUT US</span>
+                <div className="aboutP" >
+                    <p>
+                        RAKS Group striving to be a leader in the provision of staffing services and qualified talent across an array of industries.
+                    </p>
+                </div>
+                {/* <p className="aboutP1" ></p> */}
                 {/* 
 
                 We specialize in contract, contract-to-hire and full-time placement staffing services and our staffing and talent resources extend throughout the United States. Through our comprehensive network of talented job applicants,

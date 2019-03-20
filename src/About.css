@@ -1,15 +1,33 @@
+.abtNvbr{
+    background: rgba(0,0,0,0.5);
+    width:100%;
+    height: 10vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    /* background-image: linear-gradient(180deg, white 75%, transparent 100%); */
+
+}
+.abtLink{
+    color: white;
+}
+
 .about{
     width:100vw;
     height: 100vh;
     overflow: hidden;
-    background: white;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-image: linear-gradient(-60deg, #f9d342 25%, white 25%);
+
 }
-.aboutP1{
-    vertical-align: center;
+.aboutH{
+    font-size:4em;
+    text-align:center;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:20vh;
+}
+.aboutP{
+    position: sticky;
     color: #292926;
-    font-size:2em;
 }

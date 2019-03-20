@@ -9,7 +9,7 @@ import About from './About';
 import Contact from './Contact';
 import ItServices from './ItServices';
 import Career from './Career';
-import logo from "./imgs/logo.png"
+import logo from "./imgs/newLogo.png"
 
 
 class App extends Component {
@@ -17,9 +17,9 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <div className="nvbr" >
+          <div className="nvbr" id="nvbr">
             <img className="logo" src={logo} />
-            <nav className="nav" >
+            <nav className="nav" id="nav">
               <NavLink to="/" exact activeClassName="activeLink" className="link" >HOME</NavLink>
               <NavLink to="/about" activeClassName="activeLink" className="link" >ABOUT US</NavLink>
               <NavLink to="/usstaffing" activeClassName="activeLink" className="link" >US STAFFING</NavLink>

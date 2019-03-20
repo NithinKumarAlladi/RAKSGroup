@@ -43,7 +43,7 @@ p{
     width:40%;
     text-align:center;
     font-size: 4em;
-    color: black;
+    color: #292926;
 }
 .introP{
     width:60%;
@@ -54,9 +54,10 @@ p{
     color: #f9d342;
 }
 .mvDiv{
-    height:60vh;
+    /* height:60vh; */
     width: 100%;
     background-image: linear-gradient(-60deg, #f9d342 50%, #292926 50%);
+    padding-bottom: 10vh;
 }
 .mDiv{
     width:50%;
@@ -70,7 +71,7 @@ p{
     padding-top:5vh;
 }
 .missionP{
-    width:30vw;
+    width:70%;
     font-size: 1.5em;
     color: #f9d342;
     position: relative;
@@ -90,7 +91,7 @@ p{
     padding-top:5vh;
 }
 .visionP{
-    width:30vw;
+    width:70%;
     font-size: 1.5em;
     color: #292926;
     position: relative;
@@ -99,7 +100,7 @@ p{
     transform: translate(-50%, -50%);
 }
 .servicesDiv{
-    height:35vh;
+    height:inherit;
     width:100%;
     background-image: linear-gradient(60deg, #f9d342 30%, #292926 30%);
     align-items: center;
@@ -112,7 +113,7 @@ p{
 }
 .servicesBL{
     width:70%;
-    text-align: center
+    margin:10vh;
 }
 .servicesLink{
     text-decoration: none;
@@ -122,6 +123,7 @@ p{
     margin:1.5em;
     color:#f9d342;
     font-size: 1em;
+    background: transparent;
 }
 .servicesLink:hover{
     color: #292926;
@@ -138,4 +140,7 @@ p{
 }
 .activeLink{
     color:#f9d342;
+}
+.careerLink{
+    margin:5vh;
 }

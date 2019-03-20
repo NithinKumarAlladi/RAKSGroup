@@ -3,10 +3,19 @@ import { HashRouter as Router, NavLink } from "react-router-dom";
 import people from "./imgs/people.png";
 import product from './imgs/product.png'
 import process from './imgs/process.png';
-import mission from './imgs/rocket.svg';
+import mission from './imgs/rocket.png';
 import vision from './imgs/vision.png';
 
 export default class Home extends Component {
+    componentDidMount() {
+        document.getElementById("nvbr").className = "nvbr";
+        document.getElementById('nav').childNodes.forEach((ele) => {
+            if (ele.className.includes('activeLink')) {
+            } else {
+                ele.className = "link";
+            }
+        });
+    }
     render() {
         let text = "Redefined"
         return (
@@ -40,6 +49,7 @@ export default class Home extends Component {
                             <p className="missionP" >We make our clients happy, Happy clients means repeat business, which is smart business. We consider quality as the way of life at RAKS GROUP. We offer services  according to clients’ needs,
                                 We render total support to ensure quality in the entire process.
                             </p>
+                            <br />
                         </div>
                         <div className='vDiv'>
                             <img className='vImg' src={vision} alt="this is some alt message" />
@@ -51,15 +61,12 @@ export default class Home extends Component {
                     <div className="servicesDiv" >
                         <p className="servicesP" >Services</p>
                         <div className="servicesBL" >
-                            <NavLink to="/usstaffing" exact className="servicesLink" >US Staffing</NavLink>
-                            <NavLink to="/itservices/:consulting" exact className="servicesLink" >CONSULTING</NavLink>
-                            <NavLink to="/itservices/:pDev" exact className="servicesLink" >PRODUCT DEVELOPMENT</NavLink>
-                            <NavLink to="/itservices/:aDev" exact className="servicesLink" >APPLICATION DEVELOPMENT</NavLink>
-                            <br />
-                            <br />
-                            <br />
-                            <NavLink to="/itservices/:mDev" exact className="servicesLink" >MOBILE APP DEVELOPMENT</NavLink>
-                            <NavLink to="/itservices/:training" exact className="servicesLink" >TRAINING</NavLink>
+                            <NavLink to="/usstaffing" exact  ><button className="servicesLink" >US Staffing</button></NavLink>
+                            <NavLink to="/itservices/:consulting" exact  ><button className="servicesLink" >CONSULTING</button></NavLink>
+                            <NavLink to="/itservices/:pDev" exact  ><button className="servicesLink" >PRODUCT DEVELOPMENT</button></NavLink>
+                            <NavLink to="/itservices/:aDev" exact  ><button className="servicesLink" >APPLICATION DEVELOPMENT</button></NavLink>
+                            <NavLink to="/itservices/:mDev" exact  ><button className="servicesLink" >MOBILE APP DEVELOPMENT</button></NavLink>
+                            <NavLink to="/itservices/:training" exact  ><button className="servicesLink" >TRAINING</button></NavLink>
                         </div>
                     </div>
                     <div className="careerDiv" >
@@ -67,12 +74,7 @@ export default class Home extends Component {
                             <span style={{ fontSize: "4em", }} >Career</span><br /><br />
                             We thrive to create an ambience that is best suitable for our employees.
                         <br />Integrity, values and determination are the qualities of our team which unites us and makes RAKS Group LLc.</p>
-                        <br />
-                        <br />
-                        <NavLink to="/career" className="servicesLink" >VIEW CURRENT OPENINGS</NavLink>
-                        <br />
-                        <br />
-                        <br />
+                        <NavLink to="/career"><button className="servicesLink careerLink">VIEW CURRENT OPENINGS</button></NavLink>
                     </div>
                 </div>
             </Router>
