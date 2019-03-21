@@ -49,7 +49,6 @@ export default class Home extends Component {
                             <p className="missionP" >We make our clients happy, Happy clients means repeat business, which is smart business. We consider quality as the way of life at RAKS GROUP. We offer services  according to clients’ needs,
                                 We render total support to ensure quality in the entire process.
                             </p>
-                            <br />
                         </div>
                         <div className='vDiv'>
                             <img className='vImg' src={vision} alt="this is some alt message" />

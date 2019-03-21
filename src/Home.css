@@ -54,10 +54,10 @@ p{
     color: #f9d342;
 }
 .mvDiv{
-    /* height:60vh; */
+    height:60vh;    
     width: 100%;
     background-image: linear-gradient(-60deg, #f9d342 50%, #292926 50%);
-    padding-bottom: 10vh;
+    padding-bottom: 0vh;
 }
 .mDiv{
     width:50%;
