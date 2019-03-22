@@ -9,7 +9,7 @@ import About from './About';
 import Contact from './Contact';
 import ItServices from './ItServices';
 import Career from './Career';
-import logo from "./imgs/newLogo.png"
+import logo from "./imgs/logo.png"
 
 
 class App extends Component {

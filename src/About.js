@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import cr from './imgs/custRelation.png';
-import vc from './imgs/valueChain.png';
+import cr from './imgs/custRelation.svg';
+import vc from './imgs/valueChain.svg';
 import pr from './imgs/promise.png';
-import tr from "./imgs/trans.svg";
+import tr from "./imgs/transparency.svg";
 
 export default class About extends Component {
     state = {
@@ -24,7 +24,9 @@ export default class About extends Component {
     render() {
         return (
             <div className="outerAbout" >
-                <div className="about" >
+                {/* <div className="about" >
+                </div> */}
+                <div>
                     <p className="aboutH" >ABOUT US</p>
                     <div className="aboutP" >
                         <p className="p1" >
@@ -46,19 +48,19 @@ export default class About extends Component {
                     <div className="whyDiv" >
                         <p className="whyH" >WHY RAKS GROUP</p>
                         <div className="vertiLine1" ></div>
-                        <div className="vertiLine2" ></div>
-                        <div className="custRelationDiv" >
-                            <img className="icn" src={cr} style={{ marginTop: "20px" }} />
-                            <p className="custRelationH" >CUSTOMER RELATION</p>
+                        {/* <div className="vertiLine2" ></div> */}
+                        <div className="icn" >
+                            <img className="icn-img" src={cr} />
+                            {/* <p className="custRelationH" >CUSTOMER RELATION</p> */}
                         </div>
-                        <div>
-                            <img className="icn" src={vc} style={{ marginTop: 320 }} />
+                        <div className="icn">
+                            <img className="icn-img" src={vc} />
                         </div>
-                        <div>
-                            <img className="icn" src={pr} style={{ marginTop: 20, left:"50%" }} />
+                        <div className="icn">
+                            <img className="icn-img" src={pr} />
                         </div>
-                        <div>
-                            <img className="icn" src={tr} style={{ marginTop: 920 }} />
+                        <div className="icn" >
+                            <img className="icn-img" src={tr} />
                         </div>
                     </div>
                 </div>

@@ -3,7 +3,7 @@ import { HashRouter as Router, NavLink } from "react-router-dom";
 import people from "./imgs/people.png";
 import product from './imgs/product.png'
 import process from './imgs/process.png';
-import mission from './imgs/rocket.png';
+import mission from './imgs/rocket.svg';
 import vision from './imgs/vision.png';
 
 export default class Home extends Component {
