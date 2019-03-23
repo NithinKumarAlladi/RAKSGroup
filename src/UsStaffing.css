@@ -1,0 +1,43 @@
+.usNvbr{
+    background: rgba(255, 255, 255, 0.3);
+    width:100%;
+    height: 80px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+.usLink{
+    color:white;
+}
+.mainDiv{
+    width: 100%;
+    height:inherit;
+    background: #292926;
+    padding-bottom:70px;
+}
+.usH{
+    font-size:4em;
+    text-align:center;
+    padding-top: 15vh;
+    color: #f9d342;
+    padding-bottom:15vh;
+}
+.stage{
+    width:80%;
+    margin-left:10%;
+    text-align:center;
+}
+.stage:hover{
+    transform: scale(1.1);
+    box-shadow: 20px 20px 15px rgba(0, 0, 0, .5);
+}
+.paragraph{
+    padding:70px;
+    font-size:1.5em;
+}
+.yellow{
+    background: #f9d342;
+}
+.white{
+    background: white;
+}

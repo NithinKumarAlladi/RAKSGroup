@@ -3,6 +3,7 @@ import { HashRouter as Router, Route, NavLink } from "react-router-dom";
 import './App.css';
 import './Home.css';
 import './About.css';
+import './UsStaffing.css';
 import Home from './Home';
 import UsStaffing from './UsStaffing';
 import About from './About';
