@@ -24,8 +24,6 @@ export default class About extends Component {
     render() {
         return (
             <div className="outerAbout" >
-                {/* <div className="about" >
-                </div> */}
                 <div>
                     <p className="aboutH" >ABOUT US</p>
                     <div className="aboutP" >
@@ -47,20 +45,43 @@ export default class About extends Component {
                     </div>
                     <div className="whyDiv" >
                         <p className="whyH" >WHY RAKS GROUP</p>
-                        <div className="vertiLine1" ></div>
-                        {/* <div className="vertiLine2" ></div> */}
-                        <div className="icn" >
-                            <img className="icn-img" src={cr} />
-                            {/* <p className="custRelationH" >CUSTOMER RELATION</p> */}
-                        </div>
-                        <div className="icn">
-                            <img className="icn-img" src={vc} />
-                        </div>
-                        <div className="icn">
-                            <img className="icn-img" src={pr} />
-                        </div>
-                        <div className="icn" >
-                            <img className="icn-img" src={tr} />
+                        <div className="whyContent" >
+                            <div className="custRel" >
+                                <div className="icn" >
+                                    <img className="icn-img" src={cr} />
+                                </div>
+                                <div>
+                                    <p className="reasonHeading" >CUSTOMER RELATION</p>
+                                    <p className="reason" >We bridge enduring relationships with our valued clients.</p>
+                                </div>
+                            </div>
+                            <div className="custRel" >
+                                <div className="icn" >
+                                    <img className="icn-img" src={vc} />
+                                </div>
+                                <div>
+                                    <p className="reasonHeading" >HAPPINESS FOR VALUE CHAIN</p>
+                                    <p className="reason" >We offer services with total value-for-money to give maximum ROI for entire value chain.</p>
+                                </div>
+                            </div>
+                            <div className="custRel" >
+                                <div className="icn" >
+                                    <img className="icn-img" src={pr} />
+                                </div>
+                                <div>
+                                    <p className="reasonHeading" >PROMISES TO KEEP</p>
+                                    <p className="reason" >We ensure to deliver more than what we promise with our enhanced delivery models and services.</p>
+                                </div>
+                            </div>
+                            <div className="custRel" >
+                                <div className="icn" >
+                                    <img className="icn-img" src={tr} />
+                                </div>
+                                <div>
+                                    <p className="reasonHeading" >TRANSPARENCY</p>
+                                    <p className="reason" >We ensure accountability quality and timely delivery of projects.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -68,14 +89,3 @@ export default class About extends Component {
         );
     }
 }
-// TRANSPARENCY
-// We ensure accountability quality and timely delivery of projects.
-
-// CUSTOMER RELATION
-// We bridge enduring relationships with our valued clients.
-
-// HAPPINESS FOR VALUE CHAIN
-// We offer services with total value-for-money to give maximum ROI for entire value chain.
-
-// PROMISES TO KEEP
-// We ensure to deliver more than what we promise with our enhanced delivery models and services.
