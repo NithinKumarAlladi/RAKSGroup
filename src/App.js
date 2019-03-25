@@ -4,6 +4,7 @@ import './App.css';
 import './Home.css';
 import './About.css';
 import './UsStaffing.css';
+import './ItServices.css';
 import Home from './Home';
 import UsStaffing from './UsStaffing';
 import About from './About';
@@ -24,7 +25,7 @@ class App extends Component {
               <NavLink to="/" exact activeClassName="activeLink" className="link" >HOME</NavLink>
               <NavLink to="/about" activeClassName="activeLink" className="link" >ABOUT US</NavLink>
               <NavLink to="/usstaffing" activeClassName="activeLink" className="link" >US STAFFING</NavLink>
-              <NavLink to="/itservices/:null" activeClassName="activeLink" className="link" >IT SERVICES</NavLink>
+              <NavLink to="/itservices" activeClassName="activeLink" className="link" >IT SERVICES</NavLink>
               <NavLink to="/contact" activeClassName="activeLink" className="link" >CONTACT</NavLink>
               <NavLink to="/career" activeClassName="activeLink" className="link" >CAREER</NavLink>
             </nav>

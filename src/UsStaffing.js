@@ -10,16 +10,7 @@ export default class UsStaffing extends Component {
                 ele.className = "link usLink";
             }
         })
-        window.scrollTo(0,0);
-        // Array.from(document.getElementsByClassName('stage')).forEach((ele)=>{
-        //     console.log(ele)
-        //     ele.addEventListener("mouseover",(event)=>{
-        //         if(event.target.nextSibling.className){
-        //             console.log(event.target.nextSibling.className)
-        //             // event.target.nextSibling.className = event.target.nextSibling.className + "hovered"
-        //         }
-        //     })
-        // })
+        window.scrollTo(0, 0);
     }
     render() {
         return (
@@ -71,7 +62,7 @@ export default class UsStaffing extends Component {
                     </div>
                 </div>
                 <div className="stage white" >
-                    <p className="paragraph" >
+                    <p className="paragraph lastP" >
                         Serving clients with the best in marketing strategies, providing high end consulting and service.
                         Sourcing and deploying highly skilled IT specialists in mainstream and good technologies to meet client's temporary, permanent or contracting needs.
                         We provide the best recruitment solutions for every assignment while ensuring quality, integrity, expertise at an affordable cost.

@@ -57,7 +57,7 @@ p{
     height:60vh;    
     width: 100%;
     background-image: linear-gradient(-60deg, #f9d342 50%, #292926 50%);
-    padding-bottom: 5vh;
+    /* padding-bottom: 5vh; */
 }
 .mDiv{
     width:50%;
@@ -75,7 +75,7 @@ p{
     font-size: 1.5em;
     color: #f9d342;
     position: relative;
-    top: 40%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -95,7 +95,7 @@ p{
     font-size: 1.5em;
     color: #292926;
     position: relative;
-    top: 40%;
+    top: 35%;
     right: -50%;
     transform: translate(-50%, -50%);
 }

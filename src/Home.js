@@ -61,11 +61,11 @@ export default class Home extends Component {
                         <p className="servicesP" >Services</p>
                         <div className="servicesBL" >
                             <NavLink to="/usstaffing" exact  ><button className="servicesLink" >US Staffing</button></NavLink>
-                            <NavLink to="/itservices/:consulting" exact  ><button className="servicesLink" >CONSULTING</button></NavLink>
-                            <NavLink to="/itservices/:pDev" exact  ><button className="servicesLink" >PRODUCT DEVELOPMENT</button></NavLink>
-                            <NavLink to="/itservices/:aDev" exact  ><button className="servicesLink" >APPLICATION DEVELOPMENT</button></NavLink>
-                            <NavLink to="/itservices/:mDev" exact  ><button className="servicesLink" >MOBILE APP DEVELOPMENT</button></NavLink>
-                            <NavLink to="/itservices/:training" exact  ><button className="servicesLink" >TRAINING</button></NavLink>
+                            <NavLink to="/itservices/consulting" exact  ><button className="servicesLink" >CONSULTING</button></NavLink>
+                            <NavLink to="/itservices/product" exact  ><button className="servicesLink" >PRODUCT DEVELOPMENT</button></NavLink>
+                            <NavLink to="/itservices/application" exact  ><button className="servicesLink" >APPLICATION DEVELOPMENT</button></NavLink>
+                            <NavLink to="/itservices/mobile" exact  ><button className="servicesLink" >MOBILE APP DEVELOPMENT</button></NavLink>
+                            <NavLink to="/itservices/training" exact  ><button className="servicesLink" >TRAINING</button></NavLink>
                         </div>
                     </div>
                     <div className="careerDiv" >

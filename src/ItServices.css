@@ -1,0 +1,108 @@
+.itServicesNvbr{
+    background: rgba(0, 0, 0, 0.3);
+    width:100%;
+    height: 80px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+.itServicesLink{
+    color:#292926;
+}
+.mainISDiv{
+    width:100%;
+    text-align: center;
+    
+}
+.itServicesH{
+    padding-top: 15vh;
+    font-size: 4em;
+    padding-bottom: 5vh;
+}
+.itServices{
+    width:90%;
+    padding:5%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.yellowDiv{
+    background: #f9d342;
+}
+.yellowH{
+    font-size: 2em;
+    padding:20px 20px 0px 20px;
+}
+.yellowP{
+    width:80%;
+    padding:10%;
+    font-size:1.2em;
+}
+.yellowDiv:hover{
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+    box-shadow: 20px 20px 15px rgba(0, 0, 0, .5);
+}
+.blackDiv{
+    background: #292926;
+}
+.blackH{
+    font-size: 2em;
+    padding:20px 20px 0px 20px;
+    color: #f9d342;
+}
+.blackP{
+    width:80%;
+    padding:10%;
+    font-size:1.2em;
+    color: #f9d342;
+}
+.blackDiv:hover{
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+    box-shadow: 20px 20px 15px rgba(0, 0, 0, .5);
+}
+.trainingDiv{
+    background: #f9d342;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.trainingH{
+    font-size: 2em;
+    padding:20px 20px 0px 20px;
+}
+.trainingP{
+    width:90%;
+    padding:5%;
+    font-size:1.2em;
+}
+.trainingDiv:hover{
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+    box-shadow: 20px 20px 15px rgba(0, 0, 0, .5);
+}
+#training:focus{
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+    box-shadow: 20px 20px 15px rgba(0, 0, 0, .5);
+}
+#consulting:focus{
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+    box-shadow: 20px 20px 15px rgba(0, 0, 0, .5);
+}
+#product:focus{
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+    box-shadow: 20px 20px 15px rgba(0, 0, 0, .5);
+}
+#application:focus{
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+    box-shadow: 20px 20px 15px rgba(0, 0, 0, .5);
+}
+#mobile:focus{
+    background: red;
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+    box-shadow: 20px 20px 15px rgba(0, 0, 0, .5);
+}
