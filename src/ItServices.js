@@ -16,8 +16,12 @@ export default class ItServices extends Component {
             }
         })
         const { id } = this.props.match.params;
-        if(id){
-            document.getElementById(id).scrollIntoView({behavior:"smooth"});
+        if (id) {
+            window.scrollTo({
+                top: (document.getElementById(id).scrollHeight - 100),
+                left: (document.getElementById(id).scrollWidth - 100),
+                behavior: "smooth",
+            })
         }
         this.setState({
             id: id,

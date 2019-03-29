@@ -80,29 +80,3 @@
     transition-duration: 0.5s;
     box-shadow: 20px 20px 15px rgba(0, 0, 0, .5);
 }
-#training:focus{
-    transform: scale(1.05);
-    transition-duration: 0.5s;
-    box-shadow: 20px 20px 15px rgba(0, 0, 0, .5);
-}
-#consulting:focus{
-    transform: scale(1.05);
-    transition-duration: 0.5s;
-    box-shadow: 20px 20px 15px rgba(0, 0, 0, .5);
-}
-#product:focus{
-    transform: scale(1.05);
-    transition-duration: 0.5s;
-    box-shadow: 20px 20px 15px rgba(0, 0, 0, .5);
-}
-#application:focus{
-    transform: scale(1.05);
-    transition-duration: 0.5s;
-    box-shadow: 20px 20px 15px rgba(0, 0, 0, .5);
-}
-#mobile:focus{
-    background: red;
-    transform: scale(1.05);
-    transition-duration: 0.5s;
-    box-shadow: 20px 20px 15px rgba(0, 0, 0, .5);
-}
