@@ -1,0 +1,65 @@
+.careerNvbr{
+    background: rgba(255, 255, 255, 0.3);
+    width:100%;
+    height: 80px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+.careerLink{
+    color:white;
+    margin:0px;
+}
+.outerCareerDiv{
+    background:#292926;
+    width:100%;
+    text-align: center;
+    height:100vh;
+}
+.careerH{
+    font-size: 4em;
+    color: #f9d342;
+    padding-top: 15vh;
+}
+.innerCareerDiv{
+    width:90%;
+    margin:5% 5% 0% 5%;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.benifitsDiv{
+    background: #f9d342;
+}
+.benifitsH{
+    font-size: 2em;
+    background:#f9d342;
+    padding-top:1em;
+}
+.benifitsContent{
+    width:90%;
+    padding:5%;
+    font-size:1.2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+}
+.benifitsIntro{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding:20px;
+}
+.benifits{
+    float: left;
+    /* background: #292926; */
+    color: #292926;
+    margin:5px;
+    padding:10px;
+}
+.sideArrow{
+    height:15px;
+    width:15px;
+}
+.openningsDiv{
+    background:white;
+}
