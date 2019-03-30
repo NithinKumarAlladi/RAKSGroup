@@ -5,6 +5,7 @@ export default class Career extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            chosenJob: null,
             showJob: false,
             jobs: [{
                 position: "Software Developer",
@@ -45,7 +46,8 @@ export default class Career extends Component {
                 address: "RAKS Group LLC, 3900 Jermantown Rd, Suite 420, Fairfax, VA 22030",
                 requirements: ["Linux", "Puppet", "Jenkins", "Git", "AWS", "Solaris", "Ruby", "Apache", "Weblogic"],
                 description: "Perform system administration activities and build, configure, patch, and maintain servers. Configure and administer load balancers and design and develop automation processes. Install, deploy, and cluster applications across different environments and analyze test scenarios. Migrate and update software, troubleshoot issues, and provide production support.  We might accept  a Bachelor's degree plus 5 years of progressive post baccalaureate experience in lieu of a Master's. Must be willing to travel/relocate to unanticipated locations throughout the US on short notice for extended periods of time."
-            }]
+            }
+            ]
         }
     }
     toggleShowJob() {
@@ -62,6 +64,8 @@ export default class Career extends Component {
             }
         })
     }
+
+
     render() {
         return (
             <div className='outerCareerDiv' >
@@ -79,10 +83,36 @@ export default class Career extends Component {
                         </div>
                     </div>
                     <div className="openningsDiv" >
-
+                        {this.state.jobs.map((element, index) => {
+                            return (
+                                <div key={index} className="shortJob" onClick={() => {
+                                    this.setState({ chosenJob: element });
+                                    this.toggleShowJob();
+                                }} >
+                                    {element.position}
+                                </div>
+                            )
+                        })}
                     </div>
                 </div>
+                {this.state.showJob ? <Popup ele={this.state.chosenJob} closePopup={this.toggleShowJob.bind(this)} /> : null}
+                {/* <Popup ele={this.state.chosenJob} closePopup={this.toggleShowJob.bind(this)} /> */}
             </div>
         );
+    }
+}
+
+class Popup extends Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return (
+            <div className="popupDiv" >
+                {console.log(this.props.ele)}
+                <p style={{color:"white"}} >{this.props.ele.description}</p>
+                <button onClick={this.props.closePopup} >close</button>
+            </div>
+        )
     }
 }
