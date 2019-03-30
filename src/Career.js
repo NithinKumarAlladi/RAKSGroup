@@ -54,7 +54,7 @@ export default class Career extends Component {
         })
     }
     componentDidMount() {
-        document.getElementById("nvbr").className = document.getElementById('nvbr') + " careerNvbr";
+        document.getElementById("nvbr").className = "nvbr careerNvbr";
         document.getElementById('nav').childNodes.forEach((ele) => {
             if (ele.className.includes('activeLink')) {
             } else {
@@ -68,7 +68,7 @@ export default class Career extends Component {
                 <p className='careerH' >CAREER</p>
                 <div className="innerCareerDiv" >
                     <div className="benifitsDiv" >
-                        <p className="benifitsH" >OUR BENEFITS </p>
+                        <p className="benifitsH" >BENEFITS </p>
                         <div className='benifitsContent'>
                             <p className="benifitsIntro" >We care about our employees and believe in work life balance, and support that balance with the following benefits:</p>
                             <p className="benifits" > <img src={sa} className='sideArrow' /> Medical, Dental and Vision Insurance.</p>

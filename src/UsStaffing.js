@@ -3,7 +3,7 @@ import arrow from './imgs/arrow.svg';
 
 export default class UsStaffing extends Component {
     componentDidMount() {
-        document.getElementById("nvbr").className = document.getElementById('nvbr') + " usNvbr";
+        document.getElementById("nvbr").className = "nvbr usNvbr";
         document.getElementById('nav').childNodes.forEach((ele) => {
             if (ele.className.includes('activeLink')) {
             } else {

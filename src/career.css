@@ -3,8 +3,8 @@
     width:100%;
     height: 80px;
     position: absolute;
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
 }
 .careerLink{
     color:white;
@@ -14,7 +14,7 @@
     background:#292926;
     width:100%;
     text-align: center;
-    height:100vh;
+    height:inherit;
 }
 .careerH{
     font-size: 4em;
@@ -23,8 +23,8 @@
 }
 .innerCareerDiv{
     width:90%;
-    margin:5% 5% 0% 5%;
-    height: 40vh;
+    padding:5% 5% 5% 5%;
+    height: inherit;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }

@@ -5,7 +5,7 @@ export default class ItServices extends Component {
         id: null
     }
     componentDidMount() {
-        document.getElementById("nvbr").className = document.getElementById('nvbr') + " itServicesNvbr";
+        document.getElementById("nvbr").className ="nvbr itServicesNvbr";
         document.getElementById('nav').childNodes.forEach((ele) => {
             if (ele.className.includes('activeLink')) {
             } else {
