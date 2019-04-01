@@ -14,7 +14,7 @@ p{
 }
 .heading{
     vertical-align: center;
-    color: #f9d342;
+    color: var(--yellow);
     font-size: 7em;
 }
 .imgs{
@@ -34,7 +34,7 @@ p{
 .intro{
     width:100%;
     height:40vh;
-    background-image: linear-gradient(60deg, #f9d342 40%, #292926 40%);
+    background-image: linear-gradient(60deg, var(--yellow) 40%, var(--black) 40%);
     display: flex;
     align-items: center;
 }
@@ -43,7 +43,7 @@ p{
     width:40%;
     text-align:center;
     font-size: 4em;
-    color: #292926;
+    color: var(--black);
 }
 .introP{
     width:60%;
@@ -51,12 +51,12 @@ p{
     text-align:center;
     padding:5%;
     font-size: 1.5em;
-    color: #f9d342;
+    color: var(--yellow);
 }
 .mvDiv{
     height:60vh;    
     width: 100%;
-    background-image: linear-gradient(-60deg, #f9d342 50%, #292926 50%);
+    background-image: linear-gradient(-60deg, var(--yellow) 50%, var(--black) 50%);
 }
 .mDiv{
     width:50%;
@@ -72,7 +72,7 @@ p{
 .missionP{
     width:70%;
     font-size: 1.5em;
-    color: #f9d342;
+    color: var(--yellow);
     position: relative;
     top: 35%;
     left: 50%;
@@ -92,7 +92,7 @@ p{
 .visionP{
     width:70%;
     font-size: 1.5em;
-    color: #292926;
+    color: var(--black);
     position: relative;
     top: 35%;
     right: -50%;
@@ -101,7 +101,7 @@ p{
 .servicesDiv{
     height:inherit;
     width:100%;
-    background-image: linear-gradient(60deg, #f9d342 30%, #292926 30%);
+    background-image: linear-gradient(60deg, var(--yellow) 30%, var(--black) 30%);
     align-items: center;
     display: flex;
 }
@@ -116,27 +116,27 @@ p{
 }
 .servicesLink{
     text-decoration: none;
-    border: 2px solid #f9d342 ;
+    border: 2px solid var(--yellow) ;
     border-radius: 2px;
     padding:10px;
     margin:1.5em;
-    color:#f9d342;
+    color:var(--yellow);
     font-size: 1em;
     background: transparent;
 }
 .servicesLink:hover{
-    color: #292926;
-    background: #f9d342;
+    color: var(--black);
+    background: var(--yellow);
 }
 .careerDiv{
-    background: #292926;
+    background: var(--black);
     text-align: center;
 }
 .careerP{
-    color: #f9d342;
+    color: var(--yellow);
     font-size:1em;
     padding-top:2vh;
 }
 .activeLink{
-    color:#f9d342;
+    color:var(--yellow);
 }

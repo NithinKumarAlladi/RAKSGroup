@@ -13,7 +13,7 @@
     width:100vw;
     height: inherit;
     overflow:hidden;
-    background: #f9d342;
+    background: var(--yellow);
 }
 .about{
     width:56.56vw;
@@ -59,14 +59,14 @@
     width:85vw;
     padding-bottom: 20px;
     margin:5vh 5vw 5vh 10vw;
-    border-left: 4px solid #292926;
+    border-left: 4px solid var(--black);
 }
 .icn{
     height: 50px;
     width: 50px;
     padding: 10px;
     border-radius: 50%;
-    background: #292926;
+    background: var(--black);
     display: flex;
     align-items: center;
     justify-content: center;

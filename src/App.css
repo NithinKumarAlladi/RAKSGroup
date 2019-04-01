@@ -1,3 +1,9 @@
+:root{
+  --yellow : #f9d342;
+  --black : #292926;
+}
+
+
 .App{
   font-size: 16px;
   overflow-x: hidden;
@@ -6,7 +12,7 @@
   padding:0;
 }
 P{
-  color: #292926;
+  color: var(--black);
 }
 .nvbr{
   position: absolute;
@@ -27,7 +33,7 @@ P{
   padding:10px;
 }
 .link:hover{
-  color: #f9d342;
+  color: var(--yellow);
 }
 .logo{
   vertical-align: center;
@@ -35,6 +41,6 @@ P{
   height:50px;
 }
 .activeLink{
-  color:#f9d342;
+  color:var(--yellow);
   font-size:1.2em;
 }

@@ -22,7 +22,7 @@ export default class Home extends Component {
             <Router>
                 <div>
                     <div className="home" >
-                        <p className="heading" >Staffing <br /> <span style={{ fontSize: "1em", color: "#f9d342" }} >{text}</span></p>
+                        <p className="heading" >Staffing <br /> <span style={{ fontSize: "1em", color: "var(--yellow)" }} >{text}</span></p>
                     </div>
                     <div className="taglineImgs" >
                         <section className="imgDiv" >

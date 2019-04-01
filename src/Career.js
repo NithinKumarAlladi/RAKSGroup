@@ -68,7 +68,7 @@ export default class Career extends Component {
 
     render() {
         return (
-            <div className='outerCareerDiv' >
+            <div id="outerCareerDiv" className='outerCareerDiv' >
                 <p className='careerH' >CAREER</p>
                 <div className="innerCareerDiv" >
                     <div className="benifitsDiv" >
@@ -96,7 +96,6 @@ export default class Career extends Component {
                     </div>
                 </div>
                 {this.state.showJob ? <Popup ele={this.state.chosenJob} closePopup={this.toggleShowJob.bind(this)} /> : null}
-                {/* <Popup ele={this.state.chosenJob} closePopup={this.toggleShowJob.bind(this)} /> */}
             </div>
         );
     }
@@ -106,12 +105,21 @@ class Popup extends Component {
     constructor(props) {
         super(props);
     }
+    componentDidMount() {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth",
+        });
+    }
     render() {
+        const inHeight = document.getElementById("outerCareerDiv").offsetHeight;
         return (
-            <div className="popupDiv" >
-                {console.log(this.props.ele)}
-                <p style={{color:"white"}} >{this.props.ele.description}</p>
-                <button onClick={this.props.closePopup} >close</button>
+            <div id="outerPopupDiv" style={{ height: inHeight }} className="outerPopupDiv" >
+                <div className="innerPopupDiv" >
+                    <p>{this.props.ele.description}</p>
+                    <button onClick={this.props.closePopup} >close</button>
+                </div>
             </div>
         )
     }

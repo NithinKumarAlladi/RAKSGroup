@@ -12,14 +12,14 @@
 .mainDiv{
     width: 100%;
     height:inherit;
-    background: #292926;
+    background: var(--black);
     padding-bottom:70px;
 }
 .usH{
     font-size:4em;
     text-align:center;
     padding-top: 15vh;
-    color: #f9d342;
+    color: var(--yellow);
     padding-bottom:15vh;
 }
 .stage{
@@ -40,7 +40,7 @@
     font-size:1.5em;
 }
 .yellow{
-    background: #f9d342;
+    background: var(--yellow);
 }
 .white{
     background: white;
