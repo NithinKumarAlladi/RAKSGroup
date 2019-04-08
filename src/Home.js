@@ -22,7 +22,7 @@ export default class Home extends Component {
             <Router>
                 <div>
                     <div className="home" >
-                        <p className="heading" >Staffing <br /> <span style={{ fontSize: "1em", color: "white" }} >{text}</span></p>
+                        <p className="heading" >Staffing <span style={{ fontSize: "1em", color: "white" }} >{text}</span></p>
                     </div>
                     <div className="taglineImgs" >
                         <section className="imgDiv" >
@@ -39,8 +39,8 @@ export default class Home extends Component {
                         </section>
                     </div>
                     <div className="intro" >
-                        <span className="weAre" > We <br /> Are</span>
-                        <span className="introP" >RAKS Group striving to be a leader in the provision of staffing services and qualified talent across an array of industries. We specialize in contract,
+                        <div className="weAreImg" ></div>
+                        <span className="introP" ><p className="weAre" >WE ARE </p>RAKS Group striving to be a leader in the provision of staffing services and qualified talent across an array of industries. We specialize in contract,
                              contract-to-hire and full time placement staffing services and our staffing and talent resources extend throughout the United States.</span>
                     </div>
                     <div className="mvDiv" >
