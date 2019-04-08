@@ -40,8 +40,10 @@ export default class Home extends Component {
                     </div>
                     <div className="intro" >
                         <div className="weAreImg" ></div>
-                        <span className="introP" ><p className="weAre" >WE ARE </p>RAKS Group striving to be a leader in the provision of staffing services and qualified talent across an array of industries. We specialize in contract,
+                        <div className="introDiv" >
+                            <span className="introP" ><p className="weAre" >WE ARE </p>RAKS Group striving to be a leader in the provision of staffing services and qualified talent across an array of industries. We specialize in contract,
                              contract-to-hire and full time placement staffing services and our staffing and talent resources extend throughout the United States.</span>
+                        </div>
                     </div>
                     <div className="mvDiv" >
                         <div className='mDiv' >
