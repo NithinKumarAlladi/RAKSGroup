@@ -56,7 +56,6 @@ p{
 .mvDiv{
     height:60vh;    
     width: 100%;
-    /* background-image: linear-gradient(-60deg, var(--yellow) 50%, var(--black) 50%); */
     background:var(--yellow);
 }
 .mDiv{
