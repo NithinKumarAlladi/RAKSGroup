@@ -7,58 +7,78 @@
     align-items: center;
 }
 .abtLink{
-    color: white;
+    color: var(--yellow);
 }
 .outerAbout{
     width:100vw;
     height: inherit;
     overflow:hidden;
-    background: var(--yellow);
+    text-align: center;
 }
-.about{
-    width:56.56vw;
-    height:56.56vw;
-    background:white;
-    position: absolute;
-    top:0;
-    left:50%;
-    transform: translate(-50%,-50%);
-    transform: rotate(45deg);
+.aboutDiv{
+    width:100%;
+    height:90vh;
+    background: rgba(0,0,0,0.7);
 }
 .aboutH{
     font-size:4em;
     text-align:center;
     padding-top: 15vh;
+    color: var(--yellow);
 }
-.aboutP{
+.aboutBGDiv{
     width:100%;
-    height: inherit;
+    height: 90vh;
+    position: absolute;
+    z-index: -1;
     text-align: center;
+    background:url(./imgs/bg1.jpg) no-repeat;
+    background-size: cover;
+    filter: blur(3px);
 }
 .p1{
     padding-top: 15vh;
     font-size: 1.5em;
     width:60%;
-    padding-left:20%;
+    margin-left:20%;
+    text-align: center;
+    color: var(--yellow);
 }
 .para{
     font-size: 1.5em;
     width:60%;
-    padding-left:20%;
+    margin-left:20%;
     padding-bottom: 10vh;
+    color: var(--yellow);
+}
+.whyOuterDiv{
+    position: absolute;
+    z-index: -1;
+    width:100%;
+    margin:0px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.whyImg{
+    height: inherit;
+    width:100%;
+    background : url(./imgs/whyImg.jpg);
+    background-size:cover;
+    /* box-shadow: 350px 0px 2000px rgba(242, 243, 247,1) inset; */
+    float: right;
 }
 .whyDiv{
+    background: var(--yellow);
     width:100%;
-    height: inherit;
+    padding-bottom: 5vh;
 }
 .whyH{
+    padding-top: 2vh;
     font-size:4em;
     text-align: center;
 }
 .whyContent{
-    width:85vw;
-    padding-bottom: 20px;
-    margin:5vh 5vw 5vh 10vw;
+    margin:5vh 5vw 0vh 10vw;
     border-left: 4px solid var(--black);
 }
 .icn{
@@ -82,8 +102,10 @@
 }
 .reasonHeading{
     font-size: 2em;
-    margin : 10px;
+    margin : 0px 0px 0px 10px;
+    text-align: left;
 }
 .reason{
     margin:20px;
+    text-align: center;
 }

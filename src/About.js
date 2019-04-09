@@ -17,8 +17,9 @@ export default class About extends Component {
     render() {
         return (
             <div className="outerAbout" >
-                <p className="aboutH" >ABOUT US</p>
-                <div className="aboutP" >
+                <div className="aboutDiv">
+                    <div className="aboutBGDiv" ></div>
+                    <p className="aboutH" >ABOUT US</p>
                     <p className="p1" >
                         RAKS Group striving to be a leader in the provision of staffing services and qualified talent across an array of industries.
                         </p>
@@ -33,48 +34,51 @@ export default class About extends Component {
                             <br />
                         Our information technology professionals have built a reputation as business-oriented consultants with deep technical expertise, who design, build, and implement innovative information
                         technology solutions to address our clients’ needs.
-                        </p>
+                    </p>
                 </div>
-                <div className="whyDiv" >
-                    <p className="whyH" >WHY RAKS GROUP</p>
-                    <div className="whyContent" >
-                        <div className="custRel" >
-                            <div className="icn" >
-                                <img className="icn-img" src={cr} />
+                <div className="whyOuterDiv" >
+                    <div className="whyDiv" >
+                        <p className="whyH" >WHY RAKS GROUP</p>
+                        <div className="whyContent" >
+                            <div className="custRel" >
+                                <div className="icn" >
+                                    <img className="icn-img" src={cr} />
+                                </div>
+                                <div>
+                                    <p className="reasonHeading" >CUSTOMER RELATION</p>
+                                    <p className="reason" >We bridge enduring relationships with our valued clients.</p>
+                                </div>
                             </div>
-                            <div>
-                                <p className="reasonHeading" >CUSTOMER RELATION</p>
-                                <p className="reason" >We bridge enduring relationships with our valued clients.</p>
+                            <div className="custRel" >
+                                <div className="icn" >
+                                    <img className="icn-img" src={vc} />
+                                </div>
+                                <div>
+                                    <p className="reasonHeading" >HAPPINESS FOR VALUE CHAIN</p>
+                                    <p className="reason" >We offer services with total value-for-money to give maximum ROI for entire value chain.</p>
+                                </div>
                             </div>
-                        </div>
-                        <div className="custRel" >
-                            <div className="icn" >
-                                <img className="icn-img" src={vc} />
+                            <div className="custRel" >
+                                <div className="icn" >
+                                    <img className="icn-img" src={pr} />
+                                </div>
+                                <div>
+                                    <p className="reasonHeading" >PROMISES TO KEEP</p>
+                                    <p className="reason" >We ensure to deliver more than what we promise with our enhanced delivery models and services.</p>
+                                </div>
                             </div>
-                            <div>
-                                <p className="reasonHeading" >HAPPINESS FOR VALUE CHAIN</p>
-                                <p className="reason" >We offer services with total value-for-money to give maximum ROI for entire value chain.</p>
-                            </div>
-                        </div>
-                        <div className="custRel" >
-                            <div className="icn" >
-                                <img className="icn-img" src={pr} />
-                            </div>
-                            <div>
-                                <p className="reasonHeading" >PROMISES TO KEEP</p>
-                                <p className="reason" >We ensure to deliver more than what we promise with our enhanced delivery models and services.</p>
-                            </div>
-                        </div>
-                        <div className="custRel" >
-                            <div className="icn" >
-                                <img className="icn-img" src={tr} />
-                            </div>
-                            <div>
-                                <p className="reasonHeading" >TRANSPARENCY</p>
-                                <p className="reason" >We ensure accountability quality and timely delivery of projects.</p>
+                            <div className="custRel" >
+                                <div className="icn" >
+                                    <img className="icn-img" src={tr} />
+                                </div>
+                                <div>
+                                    <p className="reasonHeading" >TRANSPARENCY</p>
+                                    <p className="reason" >We ensure accountability quality and timely delivery of projects.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div className="whyImg" ></div>
                 </div>
             </div>
         );
