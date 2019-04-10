@@ -12,8 +12,7 @@
 .mainDiv{
     width: 100%;
     height:inherit;
-    background: var(--black);
-    padding-bottom:70px;
+    background: var(--yellow);
 }
 .usH{
     font-size:4em;
@@ -21,40 +20,27 @@
     padding-top: 15vh;
     color: var(--yellow);
     padding-bottom:15vh;
+    background: url(./imgs/usStaffing.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
 }
-.stage{
-    width:80%;
-    margin-left:10%;
-    text-align:center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.usMainDiv{
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
-.stage:hover{
-    transform: scale(1.1);
-    transition-duration: 0.5s;
-    box-shadow: 20px 20px 15px rgba(0, 0, 0, .5);
-}
-.paragraph{
-    padding:70px 70px 0px 70px;
-    font-size:1.5em;
-}
-.yellow{
+.stepsDiv{
+    padding:10%;
     background: var(--yellow);
 }
-.white{
-    background: white;
+.rightImg{
+    background: url(./imgs/rightImg.jpg);
+    background-size: cover;
 }
-.arrowDiv{
-    width: 70px;
-    height:70px;
-    transform:translateY(50%) rotate(45deg);
+.leftImg{
+    background: url(./imgs/leftImg.jpg);
+    background-size: cover;
 }
-.arrowIcn{
-    width:50px;
-    height: 50px;
-    transform:translate(20%,40%) rotate(-45deg);
-}
-.lastP{
-    padding-bottom: 70px;
+.paragraph{
+    padding:35px 70px 35px 70px;
+    font-size:1.1em;
 }

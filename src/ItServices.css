@@ -12,15 +12,19 @@
 .mainISDiv{
     width:100%;
     text-align: center;
-    
+    background-image: url(./imgs/its.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 .itServicesH{
-    padding-top: 15vh;
+    padding-top: 20vh;
     font-size: 4em;
+    color: var(--yellow);
     padding-bottom: 5vh;
 }
 .itServices{
-    width:90%;
     padding:5%;
     display: grid;
     grid-template-columns: auto auto;
@@ -34,7 +38,7 @@
 }
 .yellowP{
     width:80%;
-    padding:10%;
+    margin:10%;
     font-size:1.2em;
 }
 .yellowDiv:hover{
@@ -52,7 +56,7 @@
 }
 .blackP{
     width:80%;
-    padding:10%;
+    margin:10%;
     font-size:1.2em;
     color: var(--yellow);
 }
@@ -72,7 +76,7 @@
 }
 .trainingP{
     width:90%;
-    padding:5%;
+    margin:5%;
     font-size:1.2em;
 }
 .trainingDiv:hover{
