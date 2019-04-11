@@ -39,6 +39,11 @@ class App extends Component {
             <Route path='/contact' component={Contact} />
             <Route path='/career' component={Career} />
           </div>
+          <div className="endDiv" >
+            <div className="endInnerDiv" >
+
+            </div>
+          </div>
         </div>
       </Router>
     );

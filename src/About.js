@@ -13,17 +13,16 @@ export default class About extends Component {
                 ele.className = "link abtLink";
             }
         })
+        window.scrollTo(0,0);
     }
     render() {
         return (
             <div className="outerAbout" >
                 <div className="aboutDiv">
-                    <div className="aboutBGDiv" ></div>
                     <p className="aboutH" >ABOUT US</p>
                     <p className="p1" >
                         RAKS Group striving to be a leader in the provision of staffing services and qualified talent across an array of industries.
-                        </p>
-                    <br />
+                    </p>
                     <p className="para" >
                         We specialize in contract, contract-to-hire and full-time placement staffing services and our staffing and
                         talent resources extend throughout the United States. Through our comprehensive network of talented job applicants,

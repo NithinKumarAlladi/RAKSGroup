@@ -45,3 +45,16 @@ P{
   color:var(--yellow);
   font-size:1.2em;
 }
+.endDiv{
+  height: 80vh;
+  width: 100%;
+  background-image: url(./imgs/usStaffing.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment:fixed;
+}
+.endInnerDiv{
+  background: rgba(0,0,0,0.8);
+  width: 100%;
+  height: inherit;
+}

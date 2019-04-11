@@ -19,6 +19,8 @@ export default class ItServices extends Component {
                 left: (document.getElementById(id).scrollWidth - 100),
                 behavior: "smooth",
             })
+        }else{
+            window.scrollTo(0,0);
         }
         this.setState({
             id: id,
