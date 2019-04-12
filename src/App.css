@@ -1,5 +1,6 @@
 :root{
-  --yellow : rgb(242, 243, 247);
+  --yellow : #f2f3f7;
+  /* --yellow:white; */
   --black : #424449;
 }
 
@@ -46,7 +47,7 @@ P{
   font-size:1.2em;
 }
 .endDiv{
-  height: 80vh;
+  height: 75vh;
   width: 100%;
   background-image: url(./imgs/usStaffing.jpg);
   background-size: cover;
@@ -57,4 +58,54 @@ P{
   background: rgba(0,0,0,0.8);
   width: 100%;
   height: inherit;
+  display: grid;
+  grid-template-columns: 40% 20% 20% 20%;
+}
+.endLogoDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.endLogo{
+  width:300px;
+}
+.endAddress{
+  padding:10% 20% 15% 20%;
+  color: var(--yellow);
+}
+.mailtoHref{
+  text-decoration: none;
+  text-emphasis: none;
+}
+.endLinksH{
+  font-size: 2em;
+  font-weight: 500;
+  color: var(--yellow);
+  padding-bottom: 45px;
+  margin-top:200px;
+}
+.endLink{
+  text-decoration: none;
+  color: var(--yellow);
+  margin:30px 10px 30px 10px;
+}
+.endLink:hover{
+  color: var(--black);
+}
+.endCommunityDiv{
+  font-size: 2em;
+  font-weight: 500;
+  color: var(--yellow);
+  padding-bottom: 45px;
+  margin-top:200px;
+}
+.endIcn{
+  margin-top:50px;
+  padding:10px;
+  color: var(--yellow);
+}
+.glassdoorIcn{
+  width:50px;
+  margin:10px;
 }

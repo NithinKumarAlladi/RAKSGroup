@@ -15,6 +15,7 @@ export default class Home extends Component {
                 ele.className = "link";
             }
         });
+        window.scrollTo(0, 0);
     }
     render() {
         let text = "Redefined"
@@ -71,11 +72,13 @@ export default class Home extends Component {
                         </div>
                     </div>
                     <div className="careerDiv" >
-                        <p className="careerP" >
-                            <span style={{ fontSize: "4em", }} >Career</span><br /><br />
-                            We thrive to create an ambience that is best suitable for our employees.
-                        <br />Integrity, values and determination are the qualities of our team which unites us and makes RAKS Group LLc.</p>
-                        <NavLink to="/career"><button className="servicesLink">VIEW CURRENT OPENINGS</button></NavLink>
+                        <span className="careerHeading" >Career</span>
+                        <div className="careerP" >
+                            <p>
+                                We thrive to create an ambience that is best suitable for our employees.
+                                <br />Integrity, values and determination are the qualities of our team which unites us and makes RAKS Group LLc.</p>
+                            <NavLink to="/career"><button className="servicesLink">VIEW CURRENT OPENINGS</button></NavLink>
+                        </div>
                     </div>
                 </div>
             </Router>

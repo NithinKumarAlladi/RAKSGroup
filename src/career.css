@@ -16,7 +16,6 @@
     padding-top: 15vh;
 }
 .innerCareerDiv{
-    width:90%;
     padding:5% 5% 5% 5%;
     height: inherit;
     display: grid;
@@ -24,13 +23,15 @@
 }
 .benifitsDiv{
     background: var(--yellow) ;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    z-index: +1;
 }
 .benifitsH{
     font-size: 2em;
     padding-top:1em;
 }
 .benifitsContent{
-    width:90%;
     padding:5%;
     font-size:1.2em;
     display: grid;
@@ -53,15 +54,44 @@
     width:15px;
 }
 .openningsDiv{
-    background:white;
+    background:var(--yellow);
     padding:5%;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+.openingsH{
+    font-size: 2em;
+    padding-bottom: 5%;
+}
+.openings{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
 }
 .shortJob{
-    width: 45%;
-    height:20vh;
-    background:var(--yellow);
-    margin:5% 0% 5% 0%;
-    text-emphasis: none;
+    background:white;
+    margin:5% 5% 5% 5%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:10px;
+}
+.shortJobDetails{
+    padding:5px 10px 5px 10px;
+}
+.viewBtn{
+    border: 2px solid var(--black) ;
+    border-radius: 2px;
+    padding:10px;
+    margin:.5em;
+    color:var(--black);
+    font-size: 1em;
+}
+.viewBtn:hover{
+    cursor: pointer;
+    color: var(--yellow);
+    background: var(--black);
 }
 .outerPopupDiv{
     position: absolute;
@@ -70,6 +100,7 @@
     width:100%;
     background: rgba(0, 0, 0, 0.7);
     text-align: center;
+    z-index: +2;
 }
 .innerPopupDiv{
     margin:10% 5%;  
