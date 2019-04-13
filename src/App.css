@@ -22,7 +22,7 @@ P{
   background: rgba(0,0,0,0.6);
   display: flex;
   align-items: center;
-  z-index: 1;
+  z-index: 10;
 }
 .nav{
   display:block;
@@ -83,7 +83,7 @@ P{
   font-weight: 500;
   color: var(--yellow);
   padding-bottom: 45px;
-  margin-top:200px;
+  margin-top:12vh;
 }
 .endLink{
   text-decoration: none;
@@ -98,7 +98,7 @@ P{
   font-weight: 500;
   color: var(--yellow);
   padding-bottom: 45px;
-  margin-top:200px;
+  margin-top:12vh;
 }
 .endIcn{
   margin-top:50px;

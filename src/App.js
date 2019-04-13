@@ -6,6 +6,7 @@ import './About.css';
 import './UsStaffing.css';
 import './ItServices.css';
 import './career.css';
+import './Contact.css';
 import Home from './Home';
 import UsStaffing from './UsStaffing';
 import About from './About';

@@ -124,7 +124,13 @@ class Popup extends Component {
         return (
             <div id="outerPopupDiv" style={{ height: inHeight }} className="outerPopupDiv" >
                 <div className="innerPopupDiv" >
-                    <p>{this.props.ele.description}</p>
+                    <p className="popupContent" ><span className="popupContentH" >Job Title : </span>{this.props.ele.position}</p>
+                    <p className="popupContent" ><span className="popupContentH" >Experience : </span>{this.props.ele.experience}</p>
+                    <p className="popupContent" ><span className="popupContentH" >Requirements : </span>{this.props.ele.requirements}</p>
+                    <p className="popupContent" ><span className="popupContentH" >Number of Openings : </span>{this.props.ele.noOfOpenings}</p>
+                    <p className="popupContent" ><span className="popupContentH" >Decsription : </span>{this.props.ele.description}</p>
+                    <p className="popupContent" ><span className="popupContentH" >Location : </span>{this.props.ele.address}</p>
+                    <a href="https://forms.gle/vK6Xg2f34Ba8ynmo6" target="_blank" className="applyBtn" >APPLY</a>
                     <span className="viewBtn" onClick={this.props.closePopup} >close</span>
                 </div>
             </div>
