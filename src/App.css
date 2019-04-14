@@ -109,3 +109,32 @@ P{
   width:50px;
   margin:10px;
 }
+
+@media screen and (max-width:900px){
+  .nav{
+    display: none;
+  }
+  .logo{
+    height: 30px;
+  }
+  .endDiv{
+    height: inherit;
+  }
+  .endInnerDiv{
+    height: 100%;
+    grid-template-columns: 50% 50%;
+  }
+  .endLogo{
+    width:150px;
+    margin-top:12vh;
+  }
+  .endLinksH{
+    text-align: center;
+  }
+  .endLink{
+    text-align: center;
+  }
+  .endCommunityDiv{
+    text-align: center;
+  }
+}

@@ -44,3 +44,22 @@
     padding:35px 70px 35px 70px;
     font-size:1.1em;
 }
+@media screen and (max-width:900px){
+    .usMainDiv{
+        display: flex;
+        flex-direction: column;
+    }
+    .stepsDiv{
+        padding:0%;
+        height: 100%;
+    }
+    .leftImg{
+        background: url(./imgs/leftImg.jpg);
+        background-size: cover;
+        height: 50vh;
+    }
+    .paragraph{
+        padding:5%;
+        font-size:1.2em;
+    }
+}

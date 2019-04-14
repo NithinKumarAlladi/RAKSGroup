@@ -21,6 +21,7 @@
     width:100%;
     background:url(./imgs/bg1.jpg) no-repeat;
     background-size: cover;
+    background-position: bottom;
 }
 .aboutH{
     font-size:4em;
@@ -105,4 +106,36 @@
 .reason{
     margin:20px;
     text-align: center;
+}
+
+@media screen and (max-width:900px){
+    .p1{
+        padding:5%;
+    }
+    .para{
+        padding: 5% 5% 10% 5%;
+    }
+    .whyOuterDiv{
+        z-index: 0;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .whyDiv{
+        background: var(--yellow);
+        width:100%;
+        padding-bottom: 5vh;
+    }
+    .whyH{
+        font-size:2em;
+    }
+    .whyContent{
+        margin:5vh 5vw 0vh 10vw;
+    }
+    .reasonHeading{
+        font-size: 1.5em;
+    }
+    .reason{
+        margin:20px;
+        text-align: center;
+    }
 }

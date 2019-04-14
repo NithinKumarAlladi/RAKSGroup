@@ -84,3 +84,36 @@
     transition-duration: 0.5s;
     box-shadow: 20px 20px 15px rgba(0, 0, 0, .5);
 }
+
+@media screen and (max-width:900px){
+    .itServicesH{
+        font-size: 2em;
+    }
+    .itServices{
+        padding:5%;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .yellowH{
+        font-size: 1.5em;
+    }
+    .blackH{
+        font-size: 1.5em;
+    }
+    .trainingDiv{
+        background: var(--yellow);
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .trainingH{
+        font-size: 1.5em;
+    }
+    #mobile{
+        background: var(--yellow);
+        color:var(--black);
+    }
+    #application{
+        background: var(--black);
+        color:var(--yellow);
+    }
+}

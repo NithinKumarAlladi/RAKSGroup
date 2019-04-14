@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import arrow from './imgs/arrow.svg';
 
 export default class UsStaffing extends Component {
     componentDidMount() {

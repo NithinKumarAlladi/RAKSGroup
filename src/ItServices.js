@@ -43,13 +43,13 @@ export default class ItServices extends Component {
                             We undertake product development on mobile technologies, high-end networking and ITIL environments.</p>
                     </div>
                     <div className="blackDiv" id="mobile" >
-                        <p className="blackH" >MOBILE APP DEVELOPMENT</p>
-                        <p className="blackP" >Our  expert team of developers has competency in building tailor-made apps both for Android  and IOS.
+                        <p className="blackH" id="mobile" >MOBILE APP DEVELOPMENT</p>
+                        <p className="blackP" id="mobile" >Our  expert team of developers has competency in building tailor-made apps both for Android  and IOS.
                             We can develop both m Commerce Applications as well as Value Added Services applications for these mobile environments.</p>
                     </div>
                     <div className="yellowDiv" id="application" >
-                        <p className="yellowH" >APPLICATION DEVELOPMENT</p>
-                        <p className="yellowP" >We offer concrete framework for application development outsourcing through an on-site and offshore model.
+                        <p className="yellowH" id="application" >APPLICATION DEVELOPMENT</p>
+                        <p className="yellowP" id="application" >We offer concrete framework for application development outsourcing through an on-site and offshore model.
                             Each model takes care of balancing the phases and tasks of the projects to deliver the best results.</p>
                     </div>
                     <div className="trainingDiv" id="training" >
