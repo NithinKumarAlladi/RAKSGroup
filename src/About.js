@@ -41,7 +41,7 @@ export default class About extends Component {
                         <div className="whyContent" >
                             <div className="custRel" >
                                 <div className="icn" >
-                                    <img className="icn-img" src={cr} />
+                                    <img  alt="this is some alternative text." className="icn-img" src={cr} />
                                 </div>
                                 <div>
                                     <p className="reasonHeading" >CUSTOMER RELATION</p>
@@ -50,7 +50,7 @@ export default class About extends Component {
                             </div>
                             <div className="custRel" >
                                 <div className="icn" >
-                                    <img className="icn-img" src={vc} />
+                                    <img  alt="this is some alternative text." className="icn-img" src={vc} />
                                 </div>
                                 <div>
                                     <p className="reasonHeading" >HAPPINESS FOR VALUE CHAIN</p>
@@ -59,7 +59,7 @@ export default class About extends Component {
                             </div>
                             <div className="custRel" >
                                 <div className="icn" >
-                                    <img className="icn-img" src={pr} />
+                                    <img  alt="this is some alternative text." className="icn-img" src={pr} />
                                 </div>
                                 <div>
                                     <p className="reasonHeading" >PROMISES TO KEEP</p>
@@ -68,7 +68,7 @@ export default class About extends Component {
                             </div>
                             <div className="custRel" >
                                 <div className="icn" >
-                                    <img className="icn-img" src={tr} />
+                                    <img  alt="this is some alternative text." className="icn-img" src={tr} />
                                 </div>
                                 <div>
                                     <p className="reasonHeading" >TRANSPARENCY</p>

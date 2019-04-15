@@ -15,15 +15,27 @@ import ItServices from './ItServices';
 import Career from './Career';
 import logo from "./imgs/logo.png";
 import glassdoor from './imgs/glassdoor.svg';
+import menuIcn from './imgs/bars-solid.svg';
 
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showMenu: false,
+    };
+  }
+  toggleMenu() {
+    this.setState({
+      showMenu: !this.state.showMenu,
+    })
+  }
   render() {
     return (
       <Router>
         <div className="App">
           <div className="nvbr" id="nvbr">
-            <img className="logo" src={logo} />
+            <img  alt="this is some alternative text." className="logo" src={logo} />
             <nav className="nav" id="nav">
               <NavLink to="/" exact activeClassName="activeLink" className="link" >HOME</NavLink>
               <NavLink to="/about" activeClassName="activeLink" className="link" >ABOUT US</NavLink>
@@ -32,7 +44,20 @@ class App extends Component {
               <NavLink to="/career" activeClassName="activeLink" className="link" >CAREER</NavLink>
               <NavLink to="/contact" activeClassName="activeLink" className="link" >CONTACT</NavLink>
             </nav>
+            <div className="menuDiv" >
+              <img  alt="this is some alternative text." src={menuIcn} className="menuIcn" onClick={() => {
+                this.toggleMenu();
+              }} />
+            </div>
           </div>
+          {this.state.showMenu ? <div className="menuContent" >
+            <p className="menuLink" ><NavLink to="/" exact className="endLink" onClick={() => { this.toggleMenu(); }} >HOME</NavLink></p>
+            <p className="menuLink" ><NavLink to="/career" className="endLink" onClick={() => { this.toggleMenu(); }} >CAREER</NavLink></p>
+            <p className="menuLink" ><NavLink to="/contact" className="endLink" onClick={() => { this.toggleMenu(); }} >CONTACT</NavLink></p>
+            <p className="menuLink" ><NavLink to="/about" className="endLink" onClick={() => { this.toggleMenu(); }} >ABOUT</NavLink></p>
+            <p className="menuLink" ><NavLink to="/itservices" className="endLink" onClick={() => { this.toggleMenu(); }} >IT SERVICES</NavLink></p>
+            <p className="menuLink" ><NavLink to="/usstaffing" className="endLink" onClick={() => { this.toggleMenu(); }} >US STAFFING</NavLink></p>
+          </div> : null}
           <div className="comp" >
             <Route exact path='/' component={Home} />
             <Route path='/about/:id?' component={About} />
@@ -44,28 +69,29 @@ class App extends Component {
           <div className="endDiv" >
             <div className="endInnerDiv" >
               <div className="endLogoDiv" >
-                <img className="endLogo" src={logo} />
+                <img  alt="this is some alternative text." className="endLogo" src={logo} />
                 <p className="endAddress" > Address : 3900 Jermantown Rd, Suite 420, Fairfax, VA 22030.<br /> <br />Phone : +1 571-455-7257 <br /><br /> <a className="mailtoHref" href="mailto:info@raksgroup.com" >info@raksgroup.com</a></p>
               </div>
               <div>
                 <p className="endLinksH" >NAVIGATE</p>
-                <p className="endLink" ><NavLink to="/" exact className="endLink" >HOME</NavLink></p>
-                <p className="endLink" ><NavLink to="/career" className="endLink" >CAREER</NavLink></p>
-                <p className="endLink" ><NavLink to="/contact" className="endLink" >CONTACT</NavLink></p>
+                <p className="endLink" ><NavLink to="/" exact className="endLink" activeClassName="activeEndLink" >HOME</NavLink></p>
+                <p className="endLink" ><NavLink to="/career" className="endLink" activeClassName="activeEndLink">CAREER</NavLink></p>
+                <p className="endLink" ><NavLink to="/contact" className="endLink" activeClassName="activeEndLink">CONTACT</NavLink></p>
               </div>
               <div>
                 <p className="endLinksH">ABOUT US</p>
-                <p className="endLink" ><NavLink to="/about" className="endLink" >OUR COMPANY</NavLink></p>
-                <p className="endLink" ><NavLink to="/itservices" className="endLink" >IT SERVICES</NavLink></p>
-                <p className="endLink" ><NavLink to="/usstaffing" className="endLink" >US STAFFING</NavLink></p>
+                <p className="endLink" ><NavLink to="/about" className="endLink" activeClassName="activeEndLink" >OUR COMPANY</NavLink></p>
+                <p className="endLink" ><NavLink to="/itservices" className="endLink" activeClassName="activeEndLink" >IT SERVICES</NavLink></p>
+                <p className="endLink" ><NavLink to="/usstaffing" className="endLink" activeClassName="activeEndLink" >US STAFFING</NavLink></p>
               </div>
               <div className="endCommunityDiv" >COMMUNITY
                 <p>
                   <a href="https://www.linkedin.com/company/raks-group-llc" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin endIcn" aria-hidden="true"></i></a>
                   <a href="mailto:nithinkumaralladi.me@gmail.com" ><i className="fa fa-envelope endIcn" aria-hidden="true"></i></a>
-                  <a href="https://www.glassdoor.co.in/Reviews/RAKS-Group-Reviews-E2452158.htm" target="_blank" ><img src={glassdoor} className="glassdoorIcn" /></a>
+                  <a href="https://www.glassdoor.co.in/Reviews/RAKS-Group-Reviews-E2452158.htm" target="_blank" rel="noopener noreferrer"><img  alt="this is some alternative text." src={glassdoor} className="glassdoorIcn" /></a>
                 </p>
               </div>
+              <div>Icons made by <a href="https://www.flaticon.com/authors/chanut" title="Chanut">Chanut</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank" rel="noopener noreferrer">CC 3.0 BY</a></div>
             </div>
           </div>
         </div>
