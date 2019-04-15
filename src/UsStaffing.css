@@ -20,7 +20,7 @@
     padding-top: 15vh;
     color: var(--yellow);
     padding-bottom:15vh;
-    background: url(./imgs/usStaffing.jpg);
+    background: url(imgs/usStaffing.jpg);
     background-size: cover;
     background-position: 50% 50%;
 }
@@ -33,11 +33,11 @@
     background: var(--yellow);
 }
 .rightImg{
-    background: url(./imgs/rightImg.jpg);
+    background: url(imgs/rightImg.jpg);
     background-size: cover;
 }
 .leftImg{
-    background: url(./imgs/leftImg.jpg);
+    background: url(imgs/leftImg.jpg);
     background-size: cover;
 }
 .paragraph{
@@ -54,7 +54,7 @@
         height: 100%;
     }
     .leftImg{
-        background: url(./imgs/leftImg.jpg);
+        background: url(imgs/leftImg.jpg);
         background-size: cover;
         height: 50vh;
     }

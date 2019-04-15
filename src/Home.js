@@ -22,7 +22,7 @@ export default class Home extends Component {
         return (
             <Router>
                 <div>
-                    <div className="home" >
+                    <div className="home">
                         <p className="heading" >Staffing <span style={{ fontSize: "1em", color: "white" }} >{text}</span></p>
                     </div>
                     <div className="taglineImgs" >
@@ -78,7 +78,7 @@ export default class Home extends Component {
                                 We thrive to create an ambience that is best suitable for our employees.
                                 <br />Integrity, values and determination are the qualities of our team which unites us and makes RAKS Group LLc.</p>
                             <NavLink to="/career"><button className="servicesLink">VIEW CURRENT OPENINGS</button></NavLink>
-                        </div>
+                        </div> 
                     </div>
                 </div>
             </Router>

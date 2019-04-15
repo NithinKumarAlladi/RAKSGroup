@@ -1,6 +1,5 @@
 :root{
   --yellow : #f2f3f7;
-  /* --yellow:white; */
   --black : #424449;
 }
 
@@ -49,7 +48,7 @@ P{
 .endDiv{
   height: 75vh;
   width: 100%;
-  background-image: url(./imgs/usStaffing.jpg);
+  background-image: url(imgs/usStaffing.jpg);
   background-size: cover;
   background-position: center;
   background-attachment:fixed;
