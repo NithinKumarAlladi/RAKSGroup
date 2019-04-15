@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import sa from './imgs/sideArrow.png'
+import sa from './imgs/sideArrow.png';
+import close from './imgs/close.svg';
 
 export default class Career extends Component {
     constructor(props) {
@@ -76,11 +77,11 @@ export default class Career extends Component {
                         <p className="benifitsH" >BENEFITS </p>
                         <div className='benifitsContent'>
                             <p className="benifitsIntro" >We care about our employees and believe in work life balance, and support that balance with the following benefits:</p>
-                            <p className="benifits" > <img src={sa} className='sideArrow' /> Medical, Dental and Vision Insurance.</p>
-                            <p className="benifits" > <img src={sa} className='sideArrow' /> Employee Life and Disability Insurance.</p>
-                            <p className="benifits" > <img src={sa} className='sideArrow' /> Retirement benefits i.e 401 (K) Plan.</p>
-                            <p className="benifits" > <img src={sa} className='sideArrow' /> Paid time off (holidays, vacation and sick leave).</p>
-                            <p className="benifits" > <img src={sa} className='sideArrow' /> Happy Hour and get-togethers.</p>
+                            <p className="benifits" > <img src={sa} alt="this is some alternative text." className='sideArrow' /> Medical, Dental and Vision Insurance.</p>
+                            <p className="benifits" > <img src={sa} alt="this is some alternative text." className='sideArrow' /> Employee Life and Disability Insurance.</p>
+                            <p className="benifits" > <img src={sa} alt="this is some alternative text." className='sideArrow' /> Retirement benefits i.e 401 (K) Plan.</p>
+                            <p className="benifits" > <img src={sa} alt="this is some alternative text." className='sideArrow' /> Paid time off (holidays, vacation and sick leave).</p>
+                            <p className="benifits" > <img src={sa} alt="this is some alternative text." className='sideArrow' /> Happy Hour and get-togethers.</p>
                         </div>
                     </div>
                     <div className="openningsDiv" >
@@ -124,14 +125,18 @@ class Popup extends Component {
         return (
             <div id="outerPopupDiv" style={{ height: inHeight }} className="outerPopupDiv" >
                 <div className="innerPopupDiv" >
-                    <p className="popupContent" ><span className="popupContentH" >Job Title : </span>{this.props.ele.position}</p>
-                    <p className="popupContent" ><span className="popupContentH" >Experience : </span>{this.props.ele.experience}</p>
-                    <p className="popupContent" ><span className="popupContentH" >Requirements : </span>{this.props.ele.requirements}</p>
-                    <p className="popupContent" ><span className="popupContentH" >Number of Openings : </span>{this.props.ele.noOfOpenings}</p>
-                    <p className="popupContent" ><span className="popupContentH" >Decsription : </span>{this.props.ele.description}</p>
-                    <p className="popupContent" ><span className="popupContentH" >Location : </span>{this.props.ele.address}</p>
-                    <a href="https://forms.gle/vK6Xg2f34Ba8ynmo6" target="_blank" className="applyBtn" >APPLY</a>
-                    <span className="viewBtn" onClick={this.props.closePopup} >close</span>
+                    <div className="closeImgDiv">
+                        <img src={close} className="closeImg" alt="this is some alternative text." onClick={this.props.closePopup} />
+                    </div>
+                    <div>
+                        <p className="popupContent" ><span className="popupContentH" >Job Title : </span>{this.props.ele.position}</p>
+                        <p className="popupContent" ><span className="popupContentH" >Experience : </span>{this.props.ele.experience}</p>
+                        <p className="popupContent" ><span className="popupContentH" >Requirements : </span>{this.props.ele.requirements}</p>
+                        <p className="popupContent" ><span className="popupContentH" >Number of Openings : </span>{this.props.ele.noOfOpenings}</p>
+                        <p className="popupContent" ><span className="popupContentH" >Decsription : </span>{this.props.ele.description}</p>
+                        <p className="popupContent" ><span className="popupContentH" >Location : </span>{this.props.ele.address}</p>
+                    </div>
+                    <a href="https://forms.gle/vK6Xg2f34Ba8ynmo6" target="_blank" rel="noopener noreferrer" className="applyBtn" >APPLY</a>
                 </div>
             </div>
         )

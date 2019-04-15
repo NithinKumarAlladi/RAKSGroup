@@ -108,13 +108,16 @@ P{
   width:50px;
   margin:10px;
 }
+.menuDiv{
+  display: none;
+}
 
 @media screen and (max-width:900px){
   .nav{
     display: none;
   }
   .logo{
-    height: 30px;
+    height: 35px;
   }
   .endDiv{
     height: inherit;
@@ -135,5 +138,32 @@ P{
   }
   .endCommunityDiv{
     text-align: center;
+  }
+  .menuDiv{
+    display: block;
+    width:100%;
+  }
+  .menuIcn{
+    width:25px;
+    float: right;
+    margin-right:5vw;
+  }
+  .menuContent{
+    width:100%;
+    background: var(--black);
+    position: fixed;
+    padding: 90px 10% 5% 10%;
+    z-index: 3;
+  }
+  .menuLink{
+    padding:2.5% 0%;
+    text-align: center;
+    color: var(--yellow);
+  }
+  .menuLink:hover{
+    color: var(--yellow);
+  }
+  .activeEndLink{
+    color: var(--yellow);
   }
 }

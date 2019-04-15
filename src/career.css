@@ -108,7 +108,9 @@
     background: white;
     border-radius: 10px;
     text-align: center;
-    padding:10% 10%;
+    padding:5% 10%;
+    display: grid;
+    grid-template-rows: auto auto auto;
 }
 .popupContent{
     padding:0% 10% 5% 10%;
@@ -127,6 +129,18 @@
     font-size: 1em;
     text-decoration: none;
     font-weight: 500;
+    width: 100%;
+}
+.closeImg{
+    width:35px;
+    float: right;
+    margin: 5%;
+}
+.closeImg:hover{
+    cursor: pointer;
+}
+.closeImgDiv{
+    width: 100%;
 }
 
 @media screen and (max-width:900px){
@@ -148,5 +162,12 @@
     }
     .openings{
         grid-template-columns: 100%;
+    }
+    .closeImg{
+        width:25px;
+        margin:0 0 10% 0;
+    }
+    .innerPopupDiv{
+        margin:20% 5%;
     }
 }
