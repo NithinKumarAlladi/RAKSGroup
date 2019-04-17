@@ -35,7 +35,7 @@ class App extends Component {
       <Router>
         <div className="App">
           <div className="nvbr" id="nvbr">
-            <img  alt="this is some alternative text." className="logo" src={logo} />
+            <img alt="this is some alternative text." className="logo" src={logo} />
             <nav className="nav" id="nav">
               <NavLink to="/" exact activeClassName="activeLink" className="link" >HOME</NavLink>
               <NavLink to="/about" activeClassName="activeLink" className="link" >ABOUT US</NavLink>
@@ -45,7 +45,7 @@ class App extends Component {
               <NavLink to="/contact" activeClassName="activeLink" className="link" >CONTACT</NavLink>
             </nav>
             <div className="menuDiv" >
-              <img  alt="this is some alternative text." src={menuIcn} className="menuIcn" onClick={() => {
+              <img alt="this is some alternative text." src={menuIcn} className="menuIcn" onClick={() => {
                 this.toggleMenu();
               }} />
             </div>
@@ -69,7 +69,7 @@ class App extends Component {
           <div className="endDiv" >
             <div className="endInnerDiv" >
               <div className="endLogoDiv" >
-                <img  alt="this is some alternative text." className="endLogo" src={logo} />
+                <img alt="this is some alternative text." className="endLogo" src={logo} />
                 <p className="endAddress" > Address : 3900 Jermantown Rd, Suite 420, Fairfax, VA 22030.<br /> <br />Phone : +1 571-455-7257 <br /><br /> <a className="mailtoHref" href="mailto:info@raksgroup.com" >info@raksgroup.com</a></p>
               </div>
               <div>
@@ -88,10 +88,15 @@ class App extends Component {
                 <p>
                   <a href="https://www.linkedin.com/company/raks-group-llc" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin endIcn" aria-hidden="true"></i></a>
                   <a href="mailto:nithinkumaralladi.me@gmail.com" ><i className="fa fa-envelope endIcn" aria-hidden="true"></i></a>
-                  <a href="https://www.glassdoor.co.in/Reviews/RAKS-Group-Reviews-E2452158.htm" target="_blank" rel="noopener noreferrer"><img  alt="this is some alternative text." src={glassdoor} className="glassdoorIcn" /></a>
+                  <a href="https://www.glassdoor.co.in/Reviews/RAKS-Group-Reviews-E2452158.htm" target="_blank" rel="noopener noreferrer"><img alt="this is some alternative text." src={glassdoor} className="glassdoorIcn" /></a>
                 </p>
               </div>
-              <div>Icons made by <a href="https://www.flaticon.com/authors/chanut" title="Chanut">Chanut</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank" rel="noopener noreferrer">CC 3.0 BY</a></div>
+              <div className="credits" >Icons made by
+                <a href="https://www.flaticon.com/authors/chanut" style={{ color: "black" }} title="Chanut">Chanut</a> from
+                <a href="https://www.flaticon.com/" style={{ color: "black" }} title="Flaticon">www.flaticon.com</a> is licensed by
+                <a href="http://creativecommons.org/licenses/by/3.0/" style={{ color: "black" }} title="Creative Commons BY 3.0" target="_blank" rel="noopener noreferrer">
+                  CC 3.0 BY</a>
+              </div>
             </div>
           </div>
         </div>

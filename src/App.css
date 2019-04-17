@@ -14,6 +14,9 @@
 P{
   color: var(--black);
 }
+a{
+  color: var(--yellow);
+}
 .nvbr{
   position: fixed;
   width: 100%;
@@ -76,6 +79,7 @@ P{
 .mailtoHref{
   text-decoration: none;
   text-emphasis: none;
+  color: var(--yellow);
 }
 .endLinksH{
   font-size: 2em;
@@ -86,6 +90,7 @@ P{
 }
 .endLink{
   text-decoration: none;
+  text-emphasis: none;
   color: var(--yellow);
   margin:30px 10px 30px 10px;
 }
@@ -110,6 +115,9 @@ P{
 }
 .menuDiv{
   display: none;
+}
+.credits{
+  color: black;
 }
 
 @media screen and (max-width:900px){
@@ -152,7 +160,7 @@ P{
     width:100%;
     background: var(--black);
     position: fixed;
-    padding: 90px 10% 5% 10%;
+    padding: 90px 0% 5% 0%;
     z-index: 3;
   }
   .menuLink{

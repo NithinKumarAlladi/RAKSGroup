@@ -1,4 +1,19 @@
-.contactForm{
-    width:100vw;
-    height: 100vh;
+.contactDiv{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.contactImg{
+    background-image: url(imgs/weR.jpg);
+    background-size: cover;
+
+}
+@media screen and (max-width:900px){
+    .contactDiv{
+        display: block;
+        background: url(imgs/weR.jpg);
+        padding:10%;
+    }
+    .contactImg{
+        display: none;
+    }
 }
