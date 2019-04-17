@@ -16,14 +16,64 @@ export default class Home extends Component {
             }
         });
         window.scrollTo(0, 0);
+        let homeId = 1;
+        const switchHomePage = () => {
+            if (document.getElementById('home1') || document.getElementById('home2') || document.getElementById('home3')) {
+                homeId = homeId > 3 ? homeId - 3 : homeId;
+                switch (homeId) {
+                    case 1: {
+                        console.log(homeId);
+                        document.getElementById('home1').style.display = "flex";
+                        document.getElementById('home2').style.display = "none";
+                        document.getElementById('home3').style.display = "none";
+                        document.getElementById('heading').style.display = "none";
+                        showHeading();
+                        break;
+                    }
+                    case 2: {
+                        console.log(homeId);
+                        document.getElementById('home1').style.display = "none";
+                        document.getElementById('home2').style.display = "flex";
+                        document.getElementById('home3').style.display = "none";
+                        document.getElementById('heading').style.display = "none";
+                        showHeading();
+                        break;
+                    }
+                    case 3: {
+                        console.log(homeId);
+                        document.getElementById('home1').style.display = "none";
+                        document.getElementById('home2').style.display = "none";
+                        document.getElementById('home3').style.display = "flex";
+                        document.getElementById('heading').style.display = "none";
+                        showHeading();
+                        break;
+                    }
+                }
+                homeId++;
+            }
+        };
+        const showHeading = () => {
+            setTimeout(() => {
+                document.getElementById('heading').style.display = "initial";
+            }, 1100)
+        }
+        switchHomePage();
+        setInterval(switchHomePage, 3000)
     }
     render() {
-        let text = "Redefined"
         return (
             <Router>
                 <div>
                     <div className="home" >
-                        <p className="heading" >Staffing <span style={{ fontSize: "1em", color: "white" }} >{text}</span></p>
+                        <div id="home1" >
+                            <p id="heading" >Staffing Redefined </p>
+                        </div>
+                        <div id="home2" >
+                            <p id="heading" >Staffing Redefined</p>
+                        </div>
+                        <div id="home3" >
+                            <p id="heading" >Staffing Redefined</p>
+                        </div>
                     </div>
                     <div className="taglineImgs" >
                         <section className="imgDiv" >
