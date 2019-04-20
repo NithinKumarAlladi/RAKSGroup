@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import cr from './imgs/custRelation.svg';
 import vc from './imgs/valueChain.svg';
-import pr from './imgs/promise.png';
+import pr from './imgs/icons/promise.svg';
 import tr from "./imgs/transparency.svg";
 
 export default class About extends Component {
     componentDidMount() {
-        document.getElementById("nvbr").className = document.getElementById('nvbr') + " abtNvbr";
+        document.getElementById("nvbr").className = document.getElementById('nvbr').className + " abtNvbr";
         document.getElementById('nav').childNodes.forEach((ele) => {
             if (ele.className.includes('activeLink')) {
             } else {
@@ -27,10 +27,12 @@ export default class About extends Component {
                         We specialize in contract, contract-to-hire and full-time placement staffing services and our staffing and
                         talent resources extend throughout the United States. Through our comprehensive network of talented job applicants,
                         we select only the most qualified individuals within every industry to service our clients.
-                            <br />
+                    </p>
+                    <p className="para" >
                         We offer services of its consultants with extensive experience in client server applications. We develop solutions using proven tools that fit our
                         client’s Information Technology standards.
-                            <br />
+                    </p>
+                    <p className="para" >
                         Our information technology professionals have built a reputation as business-oriented consultants with deep technical expertise, who design, build, and implement innovative information
                         technology solutions to address our clients’ needs.
                     </p>
@@ -41,7 +43,7 @@ export default class About extends Component {
                         <div className="whyContent" >
                             <div className="custRel" >
                                 <div className="icn" >
-                                    <img  alt="this is some alternative text." className="icn-img" src={cr} />
+                                    <img  alt="this is some alternative text." className="icnImg" src={cr} />
                                 </div>
                                 <div>
                                     <p className="reasonHeading" >CUSTOMER RELATION</p>
@@ -50,7 +52,7 @@ export default class About extends Component {
                             </div>
                             <div className="custRel" >
                                 <div className="icn" >
-                                    <img  alt="this is some alternative text." className="icn-img" src={vc} />
+                                    <img  alt="this is some alternative text." className="icnImg" src={vc} />
                                 </div>
                                 <div>
                                     <p className="reasonHeading" >HAPPINESS FOR VALUE CHAIN</p>
@@ -59,7 +61,7 @@ export default class About extends Component {
                             </div>
                             <div className="custRel" >
                                 <div className="icn" >
-                                    <img  alt="this is some alternative text." className="icn-img" src={pr} />
+                                    <img  alt="this is some alternative text." className="icnImg" src={pr} />
                                 </div>
                                 <div>
                                     <p className="reasonHeading" >PROMISES TO KEEP</p>
@@ -68,7 +70,7 @@ export default class About extends Component {
                             </div>
                             <div className="custRel" >
                                 <div className="icn" >
-                                    <img  alt="this is some alternative text." className="icn-img" src={tr} />
+                                    <img  alt="this is some alternative text." className="icnImg" src={tr} />
                                 </div>
                                 <div>
                                     <p className="reasonHeading" >TRANSPARENCY</p>

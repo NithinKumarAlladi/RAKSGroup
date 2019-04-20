@@ -5,6 +5,7 @@
     position: fixed;
     display: flex;
     align-items: center;
+    z-index:10;
 }
 .abtLink{
     color: var(--yellow);
@@ -46,7 +47,6 @@
     background: rgba(0,0,0,0.5);
 }
 .whyOuterDiv{
-    z-index: -1;
     width:100%;
     margin:0px;
     display: grid;
@@ -57,7 +57,6 @@
     width:100%;
     background : url(imgs/whyImg.jpg);
     background-size:cover;
-    /* box-shadow: 350px 0px 2000px rgba(242, 243, 247,1) inset; */
     float: right;
 }
 .whyDiv{
@@ -75,8 +74,8 @@
     border-left: 4px solid var(--black);
 }
 .icn{
-    height: 50px;
-    width: 50px;
+    max-height: 40px;
+    max-width: 50px;
     padding: 10px;
     border-radius: 50%;
     background: var(--black);
@@ -85,7 +84,7 @@
     justify-content: center;
     transform: translate(-50%);
 }
-.icn-img{
+.icnImg{
     height:40px;
     width:40px;
 }
@@ -104,11 +103,23 @@
 }
 
 @media screen and (max-width:900px){
+    .aboutH{
+        font-size:4em;
+        text-align:center;
+        padding-top: 15vh;
+        padding-bottom: 5vh;
+        color: var(--yellow);
+        background: rgba(0,0,0,0.5);
+    }
     .p1{
         padding:5%;
+        background: white;
+        color: var(--black);
     }
     .para{
         padding: 5% 5% 10% 5%;
+        background: white;
+        color: var(--black);
     }
     .whyOuterDiv{
         z-index: 0;

@@ -1,10 +1,19 @@
 import React, { Component } from 'react';
 import { HashRouter as Router, NavLink } from "react-router-dom";
-import people from "./imgs/people.png";
-import product from './imgs/product.png'
-import process from './imgs/process.png';
-import mission from './imgs/rocket.svg';
-import vision from './imgs/vision.png';
+import people from "./imgs/icons/people.svg";
+import product from './imgs/icons/product.svg'
+import process from './imgs/icons/process.svg';
+import mission from './imgs/icons/mission.svg';
+import vision from './imgs/icons/vision.svg';
+import staff from './imgs/icons/staff.svg';
+import consultation from './imgs/icons/consultation.svg';
+import mobileAppDev from './imgs/icons/mobileAppDev.svg';
+import productDev from './imgs/icons/productDev.svg';
+import training from './imgs/icons/training.svg';
+import appDev from './imgs/icons/appDev.svg';
+
+
+
 
 export default class Home extends Component {
     componentDidMount() {
@@ -27,9 +36,9 @@ export default class Home extends Component {
                         document.getElementById('home2').style.display = "none";
                         document.getElementById('home3').style.display = "none";
                         document.getElementById('heading1').style.display = "none";
-                        setTimeout(()=>{
+                        setTimeout(() => {
                             document.getElementById("heading1").style.display = "flex";
-                        },1100)
+                        }, 1100)
                         break;
                     }
                     case 2: {
@@ -38,9 +47,9 @@ export default class Home extends Component {
                         document.getElementById('home2').style.display = "flex";
                         document.getElementById('home3').style.display = "none";
                         document.getElementById('heading2').style.display = "none";
-                        setTimeout(()=>{
+                        setTimeout(() => {
                             document.getElementById("heading2").style.display = "flex";
-                        },1100)
+                        }, 1100)
                         break;
                     }
                     case 3: {
@@ -49,9 +58,9 @@ export default class Home extends Component {
                         document.getElementById('home2').style.display = "none";
                         document.getElementById('home3').style.display = "flex";
                         document.getElementById('heading3').style.display = "none";
-                        setTimeout(()=>{
+                        setTimeout(() => {
                             document.getElementById("heading3").style.display = "flex";
-                        },1100)
+                        }, 1100)
                         break;
                     }
                 }
@@ -59,7 +68,7 @@ export default class Home extends Component {
             }
         };
         switchHomePage();
-        setInterval(switchHomePage, 4000)
+        setInterval(switchHomePage, 6000)
     }
     render() {
         return (
@@ -67,13 +76,24 @@ export default class Home extends Component {
                 <div>
                     <div className="home" >
                         <div id="home1" >
-                            <p id="heading1" className="heading" >Staffing Redefined </p>
+                            <div id="heading1" className="headingDiv" >
+                                <p className="heading" >We Are</p>
+                                <p className="heading" style={{ fontWeight: "600" }}> RAKS GROUP </p>
+                                <p className="heading" style={{ fontStyle: "italic", fontSize: "1.5em" }}> PEOPLE, PROCESS, PRODUCT </p>
+                                <NavLink to="/about" className="exploreBtn" > Explore </NavLink>
+                            </div>
                         </div>
                         <div id="home2" >
-                            <p id="heading2" className="heading" >Staffing Redefined</p>
+                            <div id="heading2" className="headingDiv" >
+                                <p className="heading" style={{ fontWeight: "600",padding: "20px" }} >US STAFFING</p>
+                                <p className="heading">Staffing redefined for client needs</p>
+                            </div>
                         </div>
                         <div id="home3" >
-                            <p id="heading3" className="heading" >Staffing Redefined</p>
+                            <div id="heading3" className="headingDiv" >
+                                <p className="heading" style={{ fontWeight: "600",padding: "20px" }} >IT SERVICES</p>
+                                <p className="heading">Defining IT Services for the business</p>
+                            </div>
                         </div>
                     </div>
                     <div className="taglineImgs" >
@@ -100,12 +120,14 @@ export default class Home extends Component {
                     <div className="mvDiv" >
                         <div className='mDiv' >
                             <img className='mImg' src={mission} alt="this is some alt message" />
+                            <p>MISSION</p>
                             <p className="missionP" >We make our clients happy, Happy clients means repeat business, which is smart business. We consider quality as the way of life at RAKS GROUP. We offer services  according to clients’ needs,
                                 We render total support to ensure quality in the entire process.
                             </p>
                         </div>
                         <div className='vDiv'>
                             <img className='vImg' src={vision} alt="this is some alt message" />
+                            <p>VISION</p>
                             <p className="visionP" >We make our clients happy, Happy clients means repeat business, which is smart business. We consider quality as the way of life at RAKS GROUP. We offer services  according to clients’ needs,
                                 We render total support to ensure quality in the entire process.
                             </p>
@@ -114,12 +136,12 @@ export default class Home extends Component {
                     <div className="servicesDiv" >
                         <p className="servicesP" >Services</p>
                         <div className="servicesBL" >
-                            <NavLink to="/usstaffing" exact  ><button className="servicesLink" >US Staffing</button></NavLink>
-                            <NavLink to="/itservices/consulting" exact  ><button className="servicesLink" >CONSULTING</button></NavLink>
-                            <NavLink to="/itservices/product" exact  ><button className="servicesLink" >PRODUCT DEVELOPMENT</button></NavLink>
-                            <NavLink to="/itservices/application" exact  ><button className="servicesLink" >APPLICATION DEVELOPMENT</button></NavLink>
-                            <NavLink to="/itservices/mobile" exact  ><button className="servicesLink" >MOBILE APP DEVELOPMENT</button></NavLink>
-                            <NavLink to="/itservices/training" exact  ><button className="servicesLink" >TRAINING</button></NavLink>
+                            <NavLink to="/usstaffing" exact  ><button className="servicesLink" ><img src={staff} className="servicesLinkImgs" alt="this is some alt text." /> US STAFFING</button></NavLink>
+                            <NavLink to="/itservices/product" exact  ><button className="servicesLink" ><img src={productDev} className="servicesLinkImgs" alt="this is some alt text." />PRODUCT DEVELOPMENT</button></NavLink>
+                            <NavLink to="/itservices/consulting" exact  ><button className="servicesLink" ><img src={consultation} className="servicesLinkImgs" alt="this is some alt text." />CONSULTING</button></NavLink>
+                            <NavLink to="/itservices/application" exact  ><button className="servicesLink" ><img src={appDev} className="servicesLinkImgs" alt="this is some alt text." />APPLICATION DEVELOPMENT</button></NavLink>
+                            <NavLink to="/itservices/training" exact  ><button className="servicesLink" ><img src={training} className="servicesLinkImgs" alt="this is some alt text." />TRAINING</button></NavLink>
+                            <NavLink to="/itservices/mobile" exact  ><button className="servicesLink" ><img src={mobileAppDev} className="servicesLinkImgs" alt="this is some alt text." />MOBILE APP DEVELOPMENT</button></NavLink>
                         </div>
                     </div>
                     <div className="careerDiv" >
@@ -128,8 +150,8 @@ export default class Home extends Component {
                             <p>
                                 We thrive to create an ambience that is best suitable for our employees.
                                 <br />Integrity, values and determination are the qualities of our team which unites us and makes RAKS Group LLc.</p>
-                            <NavLink to="/career"><button className="servicesLink">VIEW CURRENT OPENINGS</button></NavLink>
-                        </div> 
+                            <NavLink to="/career"><button className="currOpeningLink">VIEW CURRENT OPENINGS</button></NavLink>
+                        </div>
                     </div>
                 </div>
             </Router>

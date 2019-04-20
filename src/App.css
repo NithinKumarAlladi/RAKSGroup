@@ -1,6 +1,7 @@
 :root{
   --yellow : #f2f3f7;
   --black : #424449;
+  --blue : #243665;
 }
 
 
@@ -34,7 +35,8 @@ a{
 .link{
   color: white;
   text-decoration: none;
-  padding:10px;
+  padding:10px 10px 5px 10px;
+  margin:0 10px;
 }
 .link:hover{
   color: var(--yellow);
@@ -46,7 +48,8 @@ a{
 }
 .activeLink{
   color:var(--yellow);
-  font-size:1.2em;
+  font-weight: 600;
+  border-bottom: 2px solid var(--yellow);
 }
 .endDiv{
   height: 75vh;
@@ -94,8 +97,8 @@ a{
   color: var(--yellow);
   margin:30px 10px 30px 10px;
 }
-.endLink:hover{
-  color: var(--black);
+.endLink:active{
+  color: var(--yellow);
 }
 .endCommunityDiv{
   font-size: 2em;
@@ -108,10 +111,14 @@ a{
   margin-top:50px;
   padding:10px;
   color: var(--yellow);
+  width:35px;
+}
+.endIcn:hover{
+  cursor: pointer;
 }
 .glassdoorIcn{
-  width:50px;
-  margin:10px;
+  width:40px;
+  padding:10px 0px;
 }
 .menuDiv{
   display: none;
@@ -150,6 +157,7 @@ a{
   .menuDiv{
     display: block;
     width:100%;
+    z-index: 2;
   }
   .menuIcn{
     width:25px;

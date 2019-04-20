@@ -25,7 +25,7 @@
     animation-duration: 1000ms;
 }
 #home2{
-    background: url(imgs/its.jpg)no-repeat;
+    background: url(imgs/staffing.jpg)no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -37,7 +37,7 @@
     animation-duration: 1000ms;
 }
 #home3{
-    background: url(imgs/it.jpg)no-repeat;
+    background: url(imgs/its.jpg)no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -52,12 +52,30 @@ p{
     padding:0;
     margin:0;
 }
+.headingDiv{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.exploreBtn{
+    text-decoration: none;
+    background: var(--yellow);
+    color: var(--black);
+    padding:10px 20px;
+    margin:20px;
+    font-weight: 500;
+    animation-name: fade;
+    animation-duration: 1500ms;
+}
 .heading{
     vertical-align: center;
     color: white;
-    font-size: 6em;
+    font-size: 3em;
+    padding:10px;
     animation-name: fade;
     animation-duration: 1500ms;
+    font-weight: 300;
 }
 .imgs{
     height:5vw;
@@ -121,14 +139,14 @@ p{
 }
 .mImg{
     width: 5vw;
-    padding-top:5vh;
+    padding-top:15vh;
 }
 .missionP{
     width:70%;
     font-size: 1.2em;
     color: var(--black);
     position: relative;
-    top: 35%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -140,14 +158,14 @@ p{
 }
 .vImg{
     width: 5vw;
-    padding-top:5vh;
+    padding-top:15vh;
 }
 .visionP{
     width:70%;
     font-size: 1.2em;
     color: var(--black);
     position: relative;
-    top: 35%;
+    top: 25%;
     right: -50%;
     transform: translate(-50%, -50%);
 }
@@ -155,31 +173,44 @@ p{
     height:inherit;
     width:100%;
     background: var(--yellow);
-    align-items: center;
-    display: flex;
+    display: grid;
+    grid-template-columns: 30% 70%;
 }
 .servicesP{
-    font-size: 4em;
-    width:30%;
-    text-align: center;
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .servicesBL{
-    width:50%;
-    margin:10vh;
+    padding:10% 0%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
 }
 .servicesLink{
+    width:100%;
     text-decoration: none;
-    border: 2px solid var(--black) ;
-    border-radius: 2px;
+    border: none;
     padding:10px;
-    margin:1.5em;
+    margin:auto;
     color:var(--black);
     font-size: 1em;
     background: transparent;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+}
+.servicesLinkImgs{
+    align-items: left;
+    justify-content: left;
+    width:60px;
+    margin:10px;
 }
 .servicesLink:hover{
-    color: var(--yellow);
-    background: var(--black);
+    background:#e4e4e4;
+    text-emphasis: none;
+    cursor: pointer;
+    text-decoration: none;
 }
 .careerDiv{
     background: var(--yellow);
@@ -189,7 +220,7 @@ p{
 }
 .careerHeading{
     color: var(--black);
-    font-size: 4em;
+    font-size: 3em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -199,6 +230,24 @@ p{
     font-size:1em;
     padding-top:2vh;
     text-align: center;
+}
+.currOpeningLink{
+    width:100%;
+    text-decoration: none;
+    border: none;
+    padding:10px;
+    margin:1.5em 0;
+    color:var(--black);
+    font-size: 1em;
+    background: transparent;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.currOpeningLink:hover{
+    background:#e4e4e4;
+    cursor: pointer;
+
 }
 .activeLink{
     color:var(--yellow);
@@ -299,12 +348,11 @@ p{
         text-align: center;
     }
     .servicesBL{
-        width:100%;
-        padding:5%;
-        margin: 0;
+        grid-template-columns: auto auto;
     }
     .servicesLink{
-        margin:0.5em;
+        width:80%;
+        margin:0%;
     }
     .careerDiv{
         display: flex;
