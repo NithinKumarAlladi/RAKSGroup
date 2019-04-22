@@ -18,22 +18,22 @@ export default class UsStaffing extends Component {
                 <div className="usMainDiv" >
                     <div className="stepsDiv" >
                         <div className="paragraph" >
-                            <div className="numberingDiv"><span className="numbering" >01</span></div>
-                            <p>Once we undertake US Staffing assignments from clients,
+                            <p className="numbering" >Step 1</p>
+                            <p className="stepP" >Once we undertake US Staffing assignments from clients,
                                 we synchronize all the requirements with existing resource databases both conventional and non-conventional, referral networks, etc. in searching the right talent.
                             </p>
                         </div>
                         <div className="paragraph" >
-                            <div className="numberingDiv"><span className="numbering" >02</span></div>
-                            <p>
+                            <p className="numbering" >Step 2</p>
+                            <p className="stepP" >
                                 We prepare exclusive search strategy to address the unique needs of clients for finding the most apt talent pool of resources.
                         <br />
                                 Based on the strategy, we search the talent and shortlist the probable resources.
                         </p>
                         </div>
                         <div className="paragraph" >
-                            <div className="numberingDiv"><span className="numbering" >03</span></div>
-                            <p>
+                            <p className="numbering" >Step 3</p>
+                            <p className="stepP" >
                                 Out of that probable list, we again scan and screen profiles based on their earlier roles and responsibilities,
                                 additional qualifications, willingness to relocate to overseas locations, etc. Thus, we prepare the final list and complete the staffing assignment.
                             </p>
@@ -43,22 +43,22 @@ export default class UsStaffing extends Component {
                     <div className="stepsDiv leftImg" ></div>
                     <div className="stepsDiv" >
                         <div className="paragraph" >
-                            <div className="numberingDiv"><span className="numbering" >04</span></div>
-                            <p>
+                            <p className="numbering" >Step 4</p>
+                            <p className="stepP" >
                                 In all steps of our US Staffing, we accentuate on simplifying processes,
                                 procedures, strategy compliances for stakeholders like clients, associates, workforce and prospective resources.
                             </p>
                         </div>
                         <div className="paragraph" >
-                            <div className="numberingDiv"><span className="numbering" >05</span></div>
-                            <p>
+                            <p className="numbering" >Step 5</p>
+                            <p className="stepP" >
                                 We emphasize on clients and their unique requirements. From analysis to deployment,
                                 we complete each step in a cohesive manner with client feedback being an important part of the process.
                             </p>
                         </div>
                         <div className="paragraph" >
-                            <div className="numberingDiv"><span className="numbering" >06</span></div>
-                            <p>
+                            <p className="numbering" >Step 6</p>
+                            <p className="stepP" >
                                 Serving clients with the best in marketing strategies, providing high end consulting and service.
                                 Sourcing and deploying highly skilled IT specialists in mainstream and good technologies to meet client's temporary, permanent or contracting needs.
                                 We provide the best recruitment solutions for every assignment while ensuring quality, integrity, expertise at an affordable cost.

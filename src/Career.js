@@ -72,35 +72,72 @@ export default class Career extends Component {
         return (
             <div id="outerCareerDiv" className='outerCareerDiv' >
                 <p className='careerH' >CAREER</p>
-                <div className="innerCareerDiv" >
-                    <div className="benifitsDiv" >
-                        <p className="benifitsH" >BENEFITS </p>
-                        <div className='benifitsContent'>
-                            <p className="benifitsIntro" >We care about our employees and believe in work life balance, and support that balance with the following benefits:</p>
-                            <p className="benifits" > <img src={sa} alt="this is some alternative text." className='sideArrow' /> Medical, Dental and Vision Insurance.</p>
-                            <p className="benifits" > <img src={sa} alt="this is some alternative text." className='sideArrow' /> Employee Life and Disability Insurance.</p>
-                            <p className="benifits" > <img src={sa} alt="this is some alternative text." className='sideArrow' /> Retirement benefits i.e 401 (K) Plan.</p>
-                            <p className="benifits" > <img src={sa} alt="this is some alternative text." className='sideArrow' /> Paid time off (holidays, vacation and sick leave).</p>
-                            <p className="benifits" > <img src={sa} alt="this is some alternative text." className='sideArrow' /> Happy Hour and get-togethers.</p>
-                        </div>
+                <div className="benifitsDiv" style={{paddingTop:"5%"}} >
+                    <p className="benifitsH" >BENEFITS </p>
+                    <p className="benifitsIntro" >We care about our employees and believe in work life balance, and support that balance with the following benefits:</p>
+                    <p className="benifitsIntro" >Our Biggest Asset is our Employees; hence it is our objective and our goal to provide you with the highest level of employee benefits tailored to each geography.
+                             We offer the highest level of service that brings all our benefits to bear.</p>
+                    <div className='benifitsContent'>
+                        <p className="benifits" > <img src={sa} alt="this is some alternative text." className='sideArrow' /> Employee Life and Disability Insurance.</p>
+                        <p className="benifits" > <img src={sa} alt="this is some alternative text." className='sideArrow' /> Retirement benefits i.e 401 (K) Plan.</p>
+                        <p className="benifits" > <img src={sa} alt="this is some alternative text." className='sideArrow' /> Paid time off (holidays, vacation and sick leave).</p>
+                        <p className="benifits" > <img src={sa} alt="this is some alternative text." className='sideArrow' /> Happy Hour and get-togethers.</p>
+                        <p className="benifits" > <img src={sa} alt="this is some alternative text." className='sideArrow' /> Sponsorships</p>
+                        <p className="benifits" > <img src={sa} alt="this is some alternative text." className='sideArrow' /> Green Card Process </p>
+                        <p className="benifits" > <img src={sa} alt="this is some alternative text." className='sideArrow' /> Group Medical Plans, Group Dental, Group Vision</p>
+                        <p className="benifits" > <img src={sa} alt="this is some alternative text." className='sideArrow' /> Short Term and Long-Term Disability</p>
                     </div>
-                    <div className="openningsDiv" >
-                        <p className="openingsH" >CURRENT OPENINGS</p>
-                        <div className="openings" >
-                            {this.state.jobs.map((element, index) => {
-                                return (
-                                    <div key={index} className="shortJob">
-                                        <p className="shortJobDetails" >Position : {element.position}</p>
-                                        <p className="shortJobDetails" >Experience : {element.experience}</p>
-                                        <p className="shortJobDetails" >Requirements : {element.requirements}</p>
-                                        <span className="viewBtn" onClick={() => {
-                                            this.setState({ chosenJob: element });
-                                            this.toggleShowJob();
-                                        }}  >VIEW JOB</span>
-                                    </div>
-                                )
-                            })}
-                        </div>
+                    <p className="benifitsIntro" >401K Retirement plans that will help ensure a secure retirement for all our employees as well as give them an opportunity to save on current taxes.</p>
+                </div>
+                <div className="benifitsDiv">
+                    <p className="benifitsH" >FINANCIAL ADVISORY SERVICES</p>
+                    <p className="benifitsIntro" >We also offer the services of professional Financial Consultants who can guide you through the above process as well as offer you a complimentary financial plan.
+                             They can advise you in the areas of College Funding, Financial Independence, Retirement Planning, Insurance Planning and Estate Planning.</p>
+                </div>
+                <div className='benifitsDiv'>
+                    <p className="benifitsH" >FLEXIBLE OPPORTUNITY</p>
+                    <p className="benifitsIntro" >We work with you to see what type of opportunity suits your goals.
+                     You may be looking for a short-term opportunity to get started or maybe you need a stop gap arrangement
+                     or perhaps you need a contract to hire position to give you the flexibility to understand the position and then go full-time.
+                         Working with a staffing company like ours, we can work with you and your situation.
+                    </p>
+                </div>
+                <div className='benifitsDiv'>
+                    <p className="benifitsH" >JOB PREPARATION</p>
+                    <p className="benifitsIntro">If you are looking for a new job or want to switch jobs, contact us. We will assist you at each step in the hiring process.
+                         Our HR experts will guide you from interview to placement.
+                    </p>
+                </div>
+                <div className='benifitsDiv'>
+                    <p className="benifitsH" >EQUAL OPPORTUNITY</p>
+                    <p className="benifitsIntro">We are an Equal Opportunity Employer. We offer equal employment and advancement opportunities to all individuals.
+                     Employment decisions are based on merit, qualifications and abilities. We do not discriminate in employment opportunities or practices on the basis of race,
+                     color and religion, gender, national origin, ancestry, age, disabilities or any other characteristics protected by law.
+                    </p>
+                </div>
+                <div className='benifitsDiv' style={{paddingBottom:"5%"}}>
+                    <p className="benifitsH" >STAFF FEATURES</p>
+                    <p className="benifitsIntro">RAKS Group  providing training on cutting edge technologies to empower employees and enhance their capabilities, competencies, competitiveness and performance. Apart from honing our employees technical skills, we also focus on improving their communication and managerial skills.
+                     The trainees will be taught skills ranging from Project Management to streamlining processes,
+                     controlling projects and maintaining discipline on budgetary and time deadlines.
+                    </p>
+                </div>
+                <div className="openningsDiv" >
+                    <p className="openingsH" >CURRENT OPENINGS</p>
+                    <div className="openings" >
+                        {this.state.jobs.map((element, index) => {
+                            return (
+                                <div key={index} className="shortJob" onClick={() => {
+                                    this.setState({ chosenJob: element });
+                                    this.toggleShowJob();
+                                }} >
+                                    <p className="shortJobDetails jobH" >{element.position}</p>
+                                    <p className="shortJobDetails" >Experience : {element.experience}</p>
+                                    <p className="shortJobDetails" >Requirements : {element.requirements}</p>
+                                    {/* <p className="viewBtn" >VIEW JOB</p> */}
+                                </div>
+                            )
+                        })}
                     </div>
                 </div>
                 {this.state.showJob ? <Popup ele={this.state.chosenJob} closePopup={this.toggleShowJob.bind(this)} /> : null}

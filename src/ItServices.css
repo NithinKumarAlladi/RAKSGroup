@@ -50,6 +50,7 @@
 }
 .serviceP{
     text-align: left;
+    font-size: 1em;
 }
 
 
@@ -60,5 +61,8 @@
     .serviceDiv{
         width:90%;
         padding:2.5% 5% 2.5% 5%;
+    }
+    .serviceP{
+        font-size: 1em;
     }
 }

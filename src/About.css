@@ -100,6 +100,7 @@
 .reason{
     margin:20px;
     text-align: center;
+    font-size: 1.1em;
 }
 
 @media screen and (max-width:900px){
@@ -115,11 +116,14 @@
         padding:5%;
         background: white;
         color: var(--black);
+        font-size: 1.1em;
     }
     .para{
         padding: 5% 5% 10% 5%;
         background: white;
         color: var(--black);
+        font-size: 1.1em;
+
     }
     .whyOuterDiv{
         z-index: 0;
@@ -143,5 +147,6 @@
     .reason{
         margin:20px;
         text-align: center;
+        font-size: 1.1em;
     }
 }

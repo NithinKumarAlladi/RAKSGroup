@@ -1,12 +1,15 @@
 .contactDiv{
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-.contactImg{
-    background-image: url(imgs/contact.jpg);
+    /* background-image: url(imgs/contact.jpg);
     background-size: cover;
-    background-position: right;
-
+    background-position: center; */
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.contact{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 @media screen and (max-width:900px){
     .contactDiv{
@@ -15,8 +18,5 @@
         background-size: cover;
         background-position: right;
         padding:10%;
-    }
-    .contactImg{
-        display: none;
     }
 }
