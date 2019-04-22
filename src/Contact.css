@@ -3,14 +3,17 @@
     grid-template-columns: 50% 50%;
 }
 .contactImg{
-    background-image: url(imgs/weR.jpg);
+    background-image: url(imgs/contact.jpg);
     background-size: cover;
+    background-position: right;
 
 }
 @media screen and (max-width:900px){
     .contactDiv{
         display: block;
-        background: url(imgs/weR.jpg);
+        background: url(imgs/contact.jpg);
+        background-size: cover;
+        background-position: right;
         padding:10%;
     }
     .contactImg{

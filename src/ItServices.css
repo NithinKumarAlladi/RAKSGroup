@@ -19,101 +19,46 @@
     background-attachment: fixed;
 }
 .itServicesH{
-    padding-top: 20vh;
+    padding-top: 15vh;
     font-size: 4em;
     color: var(--yellow);
-    padding-bottom: 5vh;
+    padding-bottom: 15vh;
 }
 .itServices{
-    padding:5%;
-    display: grid;
-    grid-template-columns: auto auto;
-}
-.yellowDiv{
     background: var(--yellow);
-}
-.yellowH{
-    font-size: 2em;
-    padding:20px 20px 0px 20px;
-}
-.yellowP{
-    width:80%;
-    margin:10%;
-    font-size:1.2em;
-}
-.yellowDiv:hover{
-    transform: scale(1.05);
-    transition-duration: 0.5s;
-    box-shadow: 20px 20px 15px rgba(0, 0, 0, .5);
-}
-.blackDiv{
-    background: var(--black);
-}
-.blackH{
-    font-size: 2em;
-    padding:20px 20px 0px 20px;
-    color: var(--yellow);
-}
-.blackP{
-    width:80%;
-    margin:10%;
-    font-size:1.2em;
-    color: var(--yellow);
-}
-.blackDiv:hover{
-    transform: scale(1.05);
-    transition-duration: 0.5s;
-    box-shadow: 20px 20px 15px rgba(0, 0, 0, .5);
-}
-.trainingDiv{
-    background: var(--yellow);
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-.trainingH{
-    font-size: 2em;
-    padding:20px 20px 0px 20px;
-}
-.trainingP{
     width:90%;
-    margin:5%;
-    font-size:1.2em;
+    padding:5%;
 }
-.trainingDiv:hover{
-    transform: scale(1.05);
-    transition-duration: 0.5s;
-    box-shadow: 20px 20px 15px rgba(0, 0, 0, .5);
+.serviceDiv{
+    width:70%;
+    padding:2.5% 15% 2.5% 15%;
 }
+.serviceH{
+    font-size: 1.5em;
+    padding:10px 0px;
+    text-align: left;
+    margin:20px 0px;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+}
+.serviceImgs{
+    align-items: left;
+    justify-content: left;
+    width:60px;
+    margin-right: 20px;
+}
+.serviceP{
+    text-align: left;
+}
+
 
 @media screen and (max-width:900px){
     .itServicesH{
         font-size: 2em;
     }
-    .itServices{
-        padding:5%;
-        display: grid;
-        grid-template-columns: 100%;
-    }
-    .yellowH{
-        font-size: 1.5em;
-    }
-    .blackH{
-        font-size: 1.5em;
-    }
-    .trainingDiv{
-        background: var(--yellow);
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
-    .trainingH{
-        font-size: 1.5em;
-    }
-    #mobile{
-        background: var(--yellow);
-        color:var(--black);
-    }
-    #application{
-        background: var(--black);
-        color:var(--yellow);
+    .serviceDiv{
+        width:90%;
+        padding:2.5% 5% 2.5% 5%;
     }
 }

@@ -16,6 +16,12 @@ import appDev from './imgs/icons/appDev.svg';
 
 
 export default class Home extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            timer: null,
+        }
+    }
     componentDidMount() {
         document.getElementById("nvbr").className = "nvbr";
         document.getElementById('nav').childNodes.forEach((ele) => {
@@ -27,39 +33,43 @@ export default class Home extends Component {
         window.scrollTo(0, 0);
         let homeId = 1;
         const switchHomePage = () => {
+            console.log(homeId);
             if (document.getElementById('home1') || document.getElementById('home2') || document.getElementById('home3')) {
                 homeId = homeId > 3 ? homeId - 3 : homeId;
                 switch (homeId) {
                     case 1: {
-                        console.log(homeId);
                         document.getElementById('home1').style.display = "flex";
                         document.getElementById('home2').style.display = "none";
                         document.getElementById('home3').style.display = "none";
                         document.getElementById('heading1').style.display = "none";
                         setTimeout(() => {
-                            document.getElementById("heading1").style.display = "flex";
+                            if (document.getElementById("heading1")) {
+                                document.getElementById("heading1").style.display = "flex";
+                            }
                         }, 1100)
                         break;
                     }
                     case 2: {
-                        console.log(homeId);
                         document.getElementById('home1').style.display = "none";
                         document.getElementById('home2').style.display = "flex";
                         document.getElementById('home3').style.display = "none";
                         document.getElementById('heading2').style.display = "none";
                         setTimeout(() => {
-                            document.getElementById("heading2").style.display = "flex";
+                            if (document.getElementById("heading2")) {
+                                document.getElementById("heading2").style.display = "flex";
+                            }
                         }, 1100)
                         break;
                     }
                     case 3: {
-                        console.log(homeId);
                         document.getElementById('home1').style.display = "none";
                         document.getElementById('home2').style.display = "none";
                         document.getElementById('home3').style.display = "flex";
                         document.getElementById('heading3').style.display = "none";
                         setTimeout(() => {
-                            document.getElementById("heading3").style.display = "flex";
+                            if (document.getElementById("heading3")) {
+                                document.getElementById("heading3").style.display = "flex";
+                            }
                         }, 1100)
                         break;
                     }
@@ -68,7 +78,11 @@ export default class Home extends Component {
             }
         };
         switchHomePage();
-        setInterval(switchHomePage, 6000)
+        const timerId = setInterval(switchHomePage, 6000);
+        this.setState({ timer: timerId })
+    }
+    componentWillUnmount() {
+        clearInterval(this.state.timer);
     }
     render() {
         return (
@@ -85,13 +99,13 @@ export default class Home extends Component {
                         </div>
                         <div id="home2" >
                             <div id="heading2" className="headingDiv" >
-                                <p className="heading" style={{ fontWeight: "600",padding: "20px" }} >US STAFFING</p>
+                                <p className="heading" style={{ fontWeight: "600", padding: "20px" }} >US STAFFING</p>
                                 <p className="heading">Staffing redefined for client needs</p>
                             </div>
                         </div>
                         <div id="home3" >
                             <div id="heading3" className="headingDiv" >
-                                <p className="heading" style={{ fontWeight: "600",padding: "20px" }} >IT SERVICES</p>
+                                <p className="heading" style={{ fontWeight: "600", padding: "20px" }} >IT SERVICES</p>
                                 <p className="heading">Defining IT Services for the business</p>
                             </div>
                         </div>
