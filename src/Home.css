@@ -37,7 +37,7 @@
     animation-duration: 1000ms;
 }
 #home3{
-    background: url(imgs/its.jpg)no-repeat;
+    background: url(imgs/itservicesBG.jpg)no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -77,6 +77,10 @@ p{
     animation-duration: 1500ms;
     font-weight: 300;
 }
+.raks{
+    font-size: 4em;
+    font-family: 'Lato',Arial,Helvetica,sans-serif;
+}
 .imgs{
     height:5vw;
     width:5vw;
@@ -113,13 +117,14 @@ p{
     background-image : url(imgs/weR.jpg);
     background-size:cover;
     background-attachment: fixed;
-    box-shadow: -350px 0px 2000px rgba(236, 236, 236,1) inset;
 }
 .introP{
-    font-size: 1.1em;
+    font-size: 1em;
     color: var(--black);
     vertical-align: center;
     padding:0% 10% 0% 10%;
+    line-height: 25px;
+
 }
 .weAre{
     font-size: 2em;
@@ -143,12 +148,13 @@ p{
 }
 .missionP{
     width:70%;
-    font-size: 1.1em;
+    font-size: 1em;
     color: var(--black);
     position: relative;
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
+    line-height: 25px;
 }
 .vDiv{
     width:50%;
@@ -162,12 +168,13 @@ p{
 }
 .visionP{
     width:70%;
-    font-size: 1.1em;
+    font-size: 1em;
     color: var(--black);
     position: relative;
     top: 25%;
     right: -50%;
     transform: translate(-50%, -50%);
+    line-height: 25px;
 }
 .servicesDiv{
     height:inherit;
@@ -231,6 +238,7 @@ p{
     font-size:1em;
     padding-top:2vh;
     text-align: center;
+    line-height: 25px;
 }
 .currOpeningLink{
     width:100%;

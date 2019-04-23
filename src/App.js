@@ -18,6 +18,8 @@ import glassdoor from './imgs/glassdoor.svg';
 import menuIcn from './imgs/bars-solid.svg';
 import linkedIn from './imgs/icons/linkedin.svg';
 import mail from './imgs/icons/envelope.svg';
+import fb from './imgs/icons/facebook.svg';
+import twitter from './imgs/icons/twitter.svg';
 
 class App extends Component {
   constructor(props) {
@@ -87,9 +89,11 @@ class App extends Component {
               </div>
               <div className="endCommunityDiv" >COMMUNITY
                 <div className="endIconDiv">
-                  <img alt="this is some alternative text." href="https://www.linkedin.com/company/raks-group-llc" target="_blank" rel="noopener noreferrer" src={linkedIn} className="endIcn" />
-                  <img href="mailto:nithinkumaralladi.me@gmail.com" alt="this is some alternative text." src={mail} className="endIcn" />
-                  <img alt="this is some alternative text." href="https://www.glassdoor.co.in/Reviews/RAKS-Group-Reviews-E2452158.htm" src={glassdoor} className="endIcn glassdoorIcn " />
+                  <a href="https://www.linkedin.com/company/raks-group-llc" target="_blank" rel="noopener noreferrer" ><img alt="this is some alternative text." src={linkedIn} className="endIcn" /></a>
+                  <a href="mailto:nithinkumaralladi.me@gmail.com" ><img alt="this is some alternative text." src={mail} className="endIcn" /></a>
+                  <a href="https://www.glassdoor.co.in/Reviews/RAKS-Group-Reviews-E2452158.htm" target="_blank" ><img alt="this is some alternative text." src={glassdoor} className="endIcn glassdoorIcn " /></a>
+                  <a href="https://www.facebook.com/RAKS-Group-LLC-594532424379987/" target="_blank" ><img alt="this is some alternative text." src={fb} className="endIcn" /></a>
+                  <a href="https://twitter.com/LlcRaks" target="_blank" ><img alt="this is some alternative text." src={twitter} className="endIcn" /></a>
                 </div>
               </div>
               <div className="credits" >Icons made by
