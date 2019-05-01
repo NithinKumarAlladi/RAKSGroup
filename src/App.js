@@ -93,7 +93,7 @@ class App extends Component {
                   <a href="mailto:nithinkumaralladi.me@gmail.com" ><img alt="this is some alternative text." src={mail} className="endIcn" /></a>
                   <a href="https://www.glassdoor.co.in/Reviews/RAKS-Group-Reviews-E2452158.htm" target="_blank" ><img alt="this is some alternative text." src={glassdoor} className="endIcn glassdoorIcn " /></a>
                   <a href="https://www.facebook.com/RAKS-Group-LLC-594532424379987/" target="_blank" ><img alt="this is some alternative text." src={fb} className="endIcn" /></a>
-                  <a href="https://twitter.com/LlcRaks" target="_blank" ><img alt="this is some alternative text." src={twitter} className="endIcn" /></a>
+                  <a href="https://twitter.com/GroupRaks" target="_blank" ><img alt="this is some alternative text." src={twitter} className="endIcn" /></a>
                 </div>
               </div>
               <div className="credits" >Icons made by

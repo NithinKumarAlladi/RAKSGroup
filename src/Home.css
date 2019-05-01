@@ -135,46 +135,44 @@ p{
     width: 100%;
     background:var(--yellow);
     border-bottom: 1px solid rgb(207, 207, 207);
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 .mDiv{
-    width:50%;
-    height:60vh;
-    text-align: center;
-    display: inline-block;
+     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .mImg{
     width: 5vw;
     padding-top:15vh;
+    padding-bottom: 10px;
 }
 .missionP{
     width:70%;
     font-size: 1em;
     color: var(--black);
-    position: relative;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     line-height: 25px;
+    padding-top:30px;
 }
 .vDiv{
-    width:50%;
-    height:60vh;
     text-align: center;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .vImg{
     width: 5vw;
     padding-top:15vh;
+    padding-bottom: 10px;
 }
 .visionP{
     width:70%;
     font-size: 1em;
     color: var(--black);
-    position: relative;
-    top: 25%;
-    right: -50%;
-    transform: translate(-50%, -50%);
     line-height: 25px;
+    padding-top:30px;
 }
 .servicesDiv{
     height:inherit;

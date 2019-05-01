@@ -14,7 +14,12 @@ export default class UsStaffing extends Component {
     render() {
         return (
             <div className="mainDiv" >
-                <p className="usH" >US STAFFING</p>
+                <div className="usHDiv" >
+                    <p className="usH" >US STAFFING</p>
+                    <p className="para" > We specialize in contract, contract-to-hire and full-time placement staffing services and our staffing and talent resources extend throughout the United States. Through our comprehensive network of talented job applicants.
+                        <br /><br />We select only the most qualified individuals within every industry to service our clients. We offer the services of its consultants with extensive experience in client server applications.
+                    </p>
+                </div>
                 <div className="usMainDiv" >
                     <div className="stepsDiv" >
                         <div className="paragraph" >

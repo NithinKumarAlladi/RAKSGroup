@@ -109,10 +109,10 @@
 
 @media screen and (max-width:900px){
     .aboutH{
-        font-size:4em;
+        font-size:2em;
         text-align:center;
         padding-top: 15vh;
-        padding-bottom: 5vh;
+        padding-bottom: 70px;
         color: var(--yellow);
         background: rgba(0,0,0,0.5);
     }

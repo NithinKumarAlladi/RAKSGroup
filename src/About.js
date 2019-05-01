@@ -22,8 +22,9 @@ export default class About extends Component {
                     <p className="aboutH" >ABOUT US</p>
                     <p className="p1" >
                         RAKS Group striving to be a leader in the provision of staffing services and qualified talent across an array of industries.
+                        <br />We offer a wide range of IT services that can be custom tailored to meet our customer’s specific needs.
                     </p>
-                    <p className="para" >
+                    {/* <p className="para" >
                         We specialize in contract, contract-to-hire and full-time placement staffing services and our staffing and
                         talent resources extend throughout the United States. Through our comprehensive network of talented job applicants,
                         we select only the most qualified individuals within every industry to service our clients.
@@ -35,7 +36,7 @@ export default class About extends Component {
                     <p className="para" >
                         Our information technology professionals have built a reputation as business-oriented consultants with deep technical expertise, who design, build, and implement innovative information
                         technology solutions to address our clients’ needs.
-                    </p>
+                    </p> */}
                 </div>
                 <div className="whyOuterDiv" >
                     <div className="whyDiv" >

@@ -127,8 +127,8 @@ export default class Home extends Component {
                     <div className="intro" >
                         <div className="weAreImg" ></div>
                         <div className="introDiv" >
-                            <span className="introP" ><p className="weAre" >WE ARE </p>RAKS Group striving to be a leader in the provision of staffing services and qualified talent across an array of industries. We specialize in contract,
-                             contract-to-hire and full time placement staffing services and our staffing and talent resources extend throughout the United States.</span>
+                            <span className="introP" ><p className="weAre" >WE ARE </p>RAKS Group striving to be a leader in the provision of staffing services and qualified talent across an array of industries.
+                             We offer a wide range of IT services that can be custom tailored to meet our customer’s specific needs.</span>
                         </div>
                     </div>
                     <div className="mvDiv" >
@@ -142,8 +142,8 @@ export default class Home extends Component {
                         <div className='vDiv'>
                             <img className='vImg' src={vision} alt="this is some alt message" />
                             <p>VISION</p>
-                            <p className="visionP" >We make our clients happy, Happy clients means repeat business, which is smart business. We consider quality as the way of life at RAKS GROUP. We offer services  according to clients’ needs,
-                                We render total support to ensure quality in the entire process.
+                            <p className="visionP" >We aim to become leader in offering services, support and solutions for the 
+                                US Staffing domain with high-end technology and exceeding the expectations of our clients.
                             </p>
                         </div>
                     </div>

@@ -4,6 +4,7 @@ import linkedIn from './imgs/icons/linkedinBlack.svg';
 import mail from './imgs/icons/envelopeBlack.svg';
 import fb from './imgs/icons/facebookBlack.svg';
 import twitter from './imgs/icons/twitterBlack.svg';
+import address from './imgs/addressCropped.png'
 
 export default class Contact extends Component {
     componentDidMount() {
@@ -14,7 +15,12 @@ export default class Contact extends Component {
             <div>
                 <p className="contactH">CONTACT US</p>
                 <div className="contactDiv" >
-                    <div className="contact" >
+                    <div style={{display:"flex",alignItems:"center",justifyContent:"center"}} >
+                        <img src={address} className="addressImg" />
+                    </div>
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeOg_n_NJl1FbkLSRHNLn8r3yeeLTZAq-D3hLGtQ6sbMAno7Q/viewform?embedded=true" overflowY="hidden" width="100%" height="750" style={{ marginTop: "10px", border: "none",overflowY:"hidden"}} >Loading...</iframe>
+                </div>
+                <div className="contact" >
                         <div className="details" >
                             <p className="detailsH" >ADDRESS</p>
                             <p className="detailsP">3900 Jermantown Rd, Suite 420, Fairfax, VA 22030</p>
@@ -37,12 +43,10 @@ export default class Contact extends Component {
                                 <a href="mailto:nithinkumaralladi.me@gmail.com" ><img alt="this is some alternative text." src={mail} className="linkIcn" /></a>
                                 <a href="https://www.glassdoor.co.in/Reviews/RAKS-Group-Reviews-E2452158.htm" target="_blank" ><img alt="this is some alternative text." src={glassdoor} className="linkIcn glassdoorIcn " /></a>
                                 <a href="https://www.facebook.com/RAKS-Group-LLC-594532424379987/" target="_blank" ><img alt="this is some alternative text." src={fb} className="linkIcn" /></a>
-                                <a href="https://twitter.com/LlcRaks" target="_blank" ><img alt="this is some alternative text." src={twitter} className="linkIcn" /></a>
+                                <a href="https://twitter.com/GroupRaks" target="_blank" ><img alt="this is some alternative text." src={twitter} className="linkIcn" /></a>
                             </p>
                         </div>
                     </div>
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeOg_n_NJl1FbkLSRHNLn8r3yeeLTZAq-D3hLGtQ6sbMAno7Q/viewform?embedded=true" width="100%" height="700" style={{ marginTop: "10px", border: "none" }} >Loading...</iframe>
-                </div>
             </div>
         );
     }
