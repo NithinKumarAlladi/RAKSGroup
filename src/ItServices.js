@@ -36,7 +36,11 @@ export default class ItServices extends Component {
 
         return (
             <div className="mainISDiv" >
-                <p className="itServicesH" >IT SERVICES</p>
+                    <p className="itServicesH" >IT SERVICES</p>
+                    <p className="itSP">
+                        We develop solutions using proven tools that fit our client’s Information Technology standards.
+                        <br /> <br /> Our information technology professionals have built a reputation as business oriented consultants with deep technical expertise, who design, build, and implement innovative information technology solutions to address our clients’ needs.
+                    </p>
                 <div className="itServices" >
                     <div className="serviceDiv" id="consulting" >
                         <p className="serviceH" ><img src={consultation} className="serviceImgs" alt="this is some alt text." />CONSULTING</p>

@@ -14,15 +14,19 @@
     height:inherit;
     background: var(--yellow);
 }
+.usHDiv{
+    background: url(imgs/usStaffing.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    text-align: center;
+}
 .usH{
     font-size:4em;
     text-align:center;
     padding-top: 15vh;
     color: var(--yellow);
     padding-bottom:15vh;
-    background: url(imgs/usStaffing.jpg);
-    background-size: cover;
-    background-position: 50% 50%;
+    background: rgba(0,0,0,0.5);
 }
 .usMainDiv{
     display: grid;
@@ -68,6 +72,10 @@
     .usMainDiv{
         display: flex;
         flex-direction: column;
+    }
+    .usH{
+        font-size: 2em;
+        padding-bottom: 70px;
     }
     .stepsDiv{
         padding:0%;

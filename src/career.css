@@ -33,6 +33,13 @@
     grid-template-columns: 1fr 1fr 1fr;
     text-align: left;
 }
+.jobsContent{
+    padding:2% 0px;
+    font-size:1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+}
 .benifitsIntro{
     padding:20px 0px;
     text-align: left;
@@ -124,6 +131,9 @@
         font-size: 2em;
     }
     .benifitsContent{
+        grid-template-columns: 100%;
+    }
+    .jobsContent{
         grid-template-columns: 100%;
     }
     .benifitsIntro{

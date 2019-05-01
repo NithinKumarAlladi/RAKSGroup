@@ -12,9 +12,14 @@
 .contactDiv{
     display: grid;
     grid-template-columns: 70% 30%;
+    
+}
+.addressImg{
+    width:90%;
+    margin:5%;
 }
 .contact{
-    margin:10%;
+    margin:5% 10%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -23,6 +28,8 @@
     justify-content: center;
     align-items: left;
     flex-direction: column;
+    margin:30px 0%;
+
 }
 .detailsH{
     font-weight: 500;
@@ -40,6 +47,7 @@
     flex-direction: column;
     grid-column-start: 1;
     grid-column-end: 4;
+    margin:30px 0%;
 }
 .mailP{
     padding:5px 10px 10px 30px;
@@ -65,7 +73,11 @@ a{
     }
     .contact{
         display: block;
-        margin:0px;
+    }
+    .addressImg{
+        width:100%;
+        margin:0%;
+        height: auto;
     }
     
 }

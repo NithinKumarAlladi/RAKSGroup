@@ -79,7 +79,6 @@ export default class Career extends Component {
                              We offer the highest level of service that brings all our benefits to bear.</p>
                     <div className='benifitsContent'>
                         <p className="benifits" > <img src={sa} alt="this is some alternative text." className='sideArrow' /> Employee Life and Disability Insurance.</p>
-                        <p className="benifits" > <img src={sa} alt="this is some alternative text." className='sideArrow' /> Retirement benefits i.e 401 (K) Plan.</p>
                         <p className="benifits" > <img src={sa} alt="this is some alternative text." className='sideArrow' /> Paid time off (holidays, vacation and sick leave).</p>
                         <p className="benifits" > <img src={sa} alt="this is some alternative text." className='sideArrow' /> Happy Hour and get-togethers.</p>
                         <p className="benifits" > <img src={sa} alt="this is some alternative text." className='sideArrow' /> Sponsorships</p>
@@ -87,7 +86,19 @@ export default class Career extends Component {
                         <p className="benifits" > <img src={sa} alt="this is some alternative text." className='sideArrow' /> Group Medical Plans, Group Dental, Group Vision</p>
                         <p className="benifits" > <img src={sa} alt="this is some alternative text." className='sideArrow' /> Short Term and Long-Term Disability</p>
                     </div>
-                    <p className="benifitsIntro" >401K Retirement plans that will help ensure a secure retirement for all our employees as well as give them an opportunity to save on current taxes.</p>
+                </div>
+                <div className="benifitsDiv">
+                    <p className="benifitsH" >JOBS WE OFFER</p>
+                    <div className='jobsContent'>
+                        <p className="benifits" > <img src={sa} alt="this is some alternative text." className='sideArrow' /> Short-term contract positions.</p>
+                        <p className="benifits" > <img src={sa} alt="this is some alternative text." className='sideArrow' /> Long-term contract positions.</p>
+                        <p className="benifits" > <img src={sa} alt="this is some alternative text." className='sideArrow' /> Contract-to-hire positions.</p>
+                        <p className="benifits" > <img src={sa} alt="this is some alternative text." className='sideArrow' /> Full-time positions.</p>
+                    </div>
+                </div>
+                <div className="benifitsDiv">
+                    <p className="benifitsH" >RETIREMENT PLANS</p>
+                    <p className="benifitsIntro" >Retirement benefits i.e 401 (K) Plan. <br />401K Retirement plans that will help ensure a secure retirement for all our employees as well as give them an opportunity to save on current taxes.</p>
                 </div>
                 <div className="benifitsDiv">
                     <p className="benifitsH" >FINANCIAL ADVISORY SERVICES</p>
