@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1159" height="261" viewBox="0 0 1159 261">
   <g id="Group_1" data-name="Group 1" transform="translate(-203 -581)">
-    <text id="RAKS_GROUP" data-name="RAKS GROUP" transform="translate(203 729)" fill="#c77b4f" font-size="150"
+    <text id="RAKS_GROUP" data-name="RAKS GROUP" transform="translate(203 729)" fill="#fb4e2e" font-size="150"
       font-family="Audiowide-Regular, Audiowide">
       <tspan x="0" y="0">RAKS</tspan>
       <tspan y="0" fill="#f2f3f7">GROUP</tspan>
@@ -8,9 +8,9 @@
     <text id="PEOPLE_PROCESS_PRODUCT" data-name="PEOPLE   |   PROCESS   |   PRODUCT" transform="translate(224 826)"
       fill="#f2f3f7" font-size="55" font-family="Audiowide-Regular, Audiowide">
       <tspan x="0" y="0" xml:space="preserve">PEOPLE </tspan>
-      <tspan y="0" xml:space="preserve" fill="#243665"> | </tspan>
+      <tspan y="0" xml:space="preserve" fill="#fb4e2e"> | </tspan>
       <tspan y="0" xml:space="preserve"> PROCESS </tspan>
-      <tspan y="0" xml:space="preserve" fill="#243665"> | </tspan>
+      <tspan y="0" xml:space="preserve" fill="#fb4e2e"> | </tspan>
       <tspan y="0" xml:space="preserve"> PRODUCT</tspan>
     </text>
   </g>
