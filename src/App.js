@@ -13,7 +13,7 @@ import About from './About';
 import Contact from './Contact';
 import ItServices from './ItServices';
 import Career from './Career';
-import logo from "./imgs/logo.png";
+import logo from "./imgs/icons/logoH.svg";
 import glassdoor from './imgs/glassdoor.svg';
 import menuIcn from './imgs/bars-solid.svg';
 import linkedIn from './imgs/icons/linkedin.svg';
@@ -92,16 +92,30 @@ class App extends Component {
                   <a href="https://www.linkedin.com/company/raks-group-llc" target="_blank" rel="noopener noreferrer" ><img alt="this is some alternative text." src={linkedIn} className="endIcn" /></a>
                   <a href="mailto:nithinkumaralladi.me@gmail.com" ><img alt="this is some alternative text." src={mail} className="endIcn" /></a>
                   <a href="https://www.glassdoor.co.in/Reviews/RAKS-Group-Reviews-E2452158.htm" target="_blank" ><img alt="this is some alternative text." src={glassdoor} className="endIcn glassdoorIcn " /></a>
-                  <a href="https://www.facebook.com/RAKS-Group-LLC-594532424379987/" target="_blank" ><img alt="this is some alternative text." src={fb} className="endIcn" /></a>
+                  <a href="https://www.facebook.com/RAKS-Group-LLC-594532424379987/" target="_blank" ><img alt="this is some alternative text." src={fb} className="endIcn" style={{padding:"10px 5px"}} /></a>
                   <a href="https://twitter.com/GroupRaks" target="_blank" ><img alt="this is some alternative text." src={twitter} className="endIcn" /></a>
                 </div>
               </div>
-              <div className="credits" >Icons made by
-                <a href="https://www.flaticon.com/authors/chanut" style={{ color: "black" }} >Chanut</a> from
-                <a href="https://www.flaticon.com/" style={{ color: "black" }}>www.flaticon.com</a> is licensed by
-                <a href="http://creativecommons.org/licenses/by/3.0/" style={{ color: "black" }} target="_blank" rel="noopener noreferrer">
-                  CC 3.0 BY</a>
-              </div>
+            </div>
+            <div className="creditsDiv" >
+              <span className="rights" >
+                All rights reserved RAKS Group LLC
+              </span>
+              <span className="credits" >
+                Icons made by
+                    <a href="https://www.flaticon.com/authors/chanut"  > Chanut, </a> 
+                    <a href="https://www.freepik.com/"> Freepik, </a>
+                    <a href="https://www.flaticon.com/authors/geotatah"> Geotatah, </a>
+                    <a href="https://www.flaticon.com/authors/srip" > Srip, </a>
+                    <a href="https://www.flaticon.com/authors/monkik" > Monkik, </a>
+                    <a href="https://www.flaticon.com/authors/eucalyp" > Eucalyp, </a>
+                    <a href="https://www.flaticon.com/authors/itim2101" > Itim2101 and </a>
+                    <a href="https://www.flaticon.com/authors/google" title="Google"> Google</a>
+                    from
+                    <a href="https://www.flaticon.com/" > www.flaticon.com</a> is licensed by
+                    <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer">
+                    CC 3.0 BY</a>
+              </span>
             </div>
           </div>
         </div>
@@ -111,3 +125,4 @@ class App extends Component {
 }
 
 export default App;
+
