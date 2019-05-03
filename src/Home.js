@@ -92,7 +92,7 @@ export default class Home extends Component {
                         <div id="home1" >
                             <div id="heading1" className="headingDiv" >
                                 <p className="heading" >We Are</p>
-                                <p className="heading raks " style={{ fontWeight: "600" }}> <span style={{color:"#243665"}} >RAKS </span>GROUP </p>
+                                <p className="heading raks " style={{ fontWeight: "600" }}> <span style={{color:"#ec4d37"}} >RAKS </span>GROUP </p>
                                 <p className="heading" style={{ fontStyle: "italic", fontSize: "1.5em" }}> PEOPLE, PROCESS, PRODUCT </p>
                                 <NavLink to="/about" className="exploreBtn" > Explore </NavLink>
                             </div>
