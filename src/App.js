@@ -38,7 +38,7 @@ class App extends Component {
       <Router>
         <div className="App">
           <div className="nvbr" id="nvbr">
-            <img alt="this is some alternative text." className="logo" src={logo} />
+            <object type="image/svg+xml" data={logo} className="logo" >Logo not rendered</object>
             <nav className="nav" id="nav">
               <NavLink to="/" exact activeClassName="activeLink" className="link" >HOME</NavLink>
               <NavLink to="/about" activeClassName="activeLink" className="link" >ABOUT US</NavLink>
@@ -72,7 +72,7 @@ class App extends Component {
           <div className="endDiv" >
             <div className="endInnerDiv" >
               <div className="endLogoDiv" >
-                <img alt="this is some alternative text." className="endLogo" src={logo} />
+                <object type="image/svg+xml" data={logo} className="endLogo" >Logo not rendered</object>
                 <p className="endAddress" > 3900 Jermantown Rd, Suite 420, Fairfax, VA 22030.<br /> <br /> +1 571-455-7257 <br /><br /> <a className="mailtoHref" href="mailto:info@raksgroup.com" >info@raksgroup.com</a></p>
               </div>
               <div>

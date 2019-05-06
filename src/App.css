@@ -68,13 +68,14 @@ a{
 }
 .endLogoDiv{
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
 }
 .endLogo{
-  margin-top:70px;
+  margin-top:12vh;
   width:300px;
+  height:80px;
 }
 .endAddress{
   padding:10% 20% 15% 20%;
@@ -161,6 +162,7 @@ a{
   .endLogo{
     width:150px;
     margin-top:12vh;
+    height: 50px;
   }
   .endLinksH{
     text-align: center;

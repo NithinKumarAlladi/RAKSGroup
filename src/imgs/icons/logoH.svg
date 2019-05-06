@@ -1,4 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1159" height="261" viewBox="0 0 1159 261">
+  <defs>
+    <style>
+      @import url('http://fonts.googleapis.com/css?family=Audiowide');
+    </style>
+  </defs>
   <g id="Group_1" data-name="Group 1" transform="translate(-203 -581)">
     <text id="RAKS_GROUP" data-name="RAKS GROUP" transform="translate(203 729)" fill="#fb4e2e" font-size="150"
       font-family="Audiowide-Regular, Audiowide">
