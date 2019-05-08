@@ -60,8 +60,10 @@ p{
 }
 .exploreBtn{
     text-decoration: none;
-    background: var(--yellow);
-    color: var(--black);
+    /* background: var(--yellow); */
+    background: transparent;
+    border: 2px solid var(--yellow);
+    color: var(--yellow);
     padding:10px 20px;
     margin:20px;
     font-weight: 500;

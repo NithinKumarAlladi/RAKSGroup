@@ -23,8 +23,8 @@ export default class Contact extends Component {
                 </div>
                 <div className="contact" >
                         <div className="details" >
-                            <p className="detailsH" >ADDRESS</p>git 
-                            <p className="detailsP">3900 Jermantown Rd, Suite 420, Fairfax, VA 22030</p>
+                            <p className="detailsH" >ADDRESS</p>
+                            <p className="detailsP">3900 Jermantown Rd, Suite 420, Fairfax, VA 22030.</p>
                         </div>
                         <div className="details" >
                             <p className="detailsH" >PHONE</p>
@@ -35,7 +35,7 @@ export default class Contact extends Component {
                             <p className="detailsP">571-455-1978</p>
                         </div>
                         <div className="mailDiv" >
-                            <p className="mailP">Please submit any inquiries via this page or you can email us directly at  <a href="mailto:nithinkumaralladi.me@gmail.com">info@raksgroup.net</a></p>
+                            <p className="mailP">Please submit any inquiries via this page or you can email us directly at  <a href="mailto:nithinkumaralladi.me@gmail.com">info@raksgroup.net</a>.</p>
                         </div>
                         <div className="mailDiv" >
                             <p className="detailsH">Social network links</p>
