@@ -9,12 +9,15 @@
     text-align: center;
 }
 .careerH{
-    background-image: url(imgs/careerDiv.jpg);
-    background-size: cover;
-    background-position: center;
+    background: rgba(0, 0, 0, 0.6);
     font-size: 4em;
     color: var(--yellow);
     padding: 15vh;
+}
+.careerHDiv{
+    background-image: url(imgs/careerBg.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .benifitsDiv{
     text-align: center;

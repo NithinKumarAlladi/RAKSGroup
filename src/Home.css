@@ -58,9 +58,17 @@ p{
     justify-content: center;
     align-items: center;
 }
+.tagline{
+    font-size: 1.5em;
+    vertical-align: center;
+    color: white;
+    padding:10px;
+    animation-name: fade;
+    animation-duration: 1500ms;
+    font-weight: 300;
+}
 .exploreBtn{
     text-decoration: none;
-    /* background: var(--yellow); */
     background: transparent;
     border: 2px solid var(--yellow);
     color: var(--yellow);
@@ -266,6 +274,10 @@ p{
     .heading{
         text-align: center;
         font-size: 2em;
+    }
+    .tagline{
+        text-align: center;
+        font-size: 1em;
     }
     .imgs{
         height:30vw;

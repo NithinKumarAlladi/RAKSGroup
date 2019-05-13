@@ -13,13 +13,14 @@ export default class Contact extends Component {
     render() {
         return (
             <div>
-                <p className="contactH">CONTACT US</p>
+                <div className="contactHDiv" >
+                    <p className="contactH">CONTACT US</p>
+                </div>
                 <div className="contactDiv" >
                     <div style={{display:"flex",alignItems:"center",justifyContent:"center"}} >
-                        <img src={address} className="addressImg" />
+                        <img src={address} className="addressImg" alt="this is some alt text." />
                     </div>
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9viSU0gJTcAqNqvmi1gDWgw-uGQT-7oyWQGZ5iW6aQFAz9Q/viewform?embedded=true" overflowY="hidden" width="100%" height="750" style={{ marginTop: "10px", border: "none",overflowY:"hidden"}} >Loading...</iframe>
-                    {/* <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeOg_n_NJl1FbkLSRHNLn8r3yeeLTZAq-D3hLGtQ6sbMAno7Q/viewform?embedded=true" overflowY="hidden" width="100%" height="750" style={{ marginTop: "10px", border: "none",overflowY:"hidden"}} >Loading...</iframe> */}
+                    <iframe title="contact-form" src="https://docs.google.com/forms/d/e/1FAIpQLSf9viSU0gJTcAqNqvmi1gDWgw-uGQT-7oyWQGZ5iW6aQFAz9Q/viewform?embedded=true" overflowY="hidden" width="100%" height="750" style={{ marginTop: "10px", border: "none",overflowY:"hidden"}} >Loading...</iframe>
                 </div>
                 <div className="contact" >
                         <div className="details" >
@@ -42,9 +43,9 @@ export default class Contact extends Component {
                             <p className="detailsP" >
                                 <a href="https://www.linkedin.com/company/raks-group-llc" target="_blank" rel="noopener noreferrer" ><img alt="this is some alternative text." src={linkedIn} className="linkIcn" /></a>
                                 <a href="mailto:nithinkumaralladi.me@gmail.com" ><img alt="this is some alternative text." src={mail} className="linkIcn" /></a>
-                                <a href="https://www.glassdoor.co.in/Reviews/RAKS-Group-Reviews-E2452158.htm" target="_blank" ><img alt="this is some alternative text." src={glassdoor} className="linkIcn glassdoorIcn " /></a>
-                                <a href="https://www.facebook.com/RAKS-Group-LLC-594532424379987/" target="_blank" ><img alt="this is some alternative text." src={fb} className="linkIcn" /></a>
-                                <a href="https://twitter.com/GroupRaks" target="_blank" ><img alt="this is some alternative text." src={twitter} className="linkIcn" /></a>
+                                <a href="https://www.glassdoor.co.in/Reviews/RAKS-Group-Reviews-E2452158.htm" target="_blank" rel="noopener noreferrer" ><img alt="this is some alternative text." src={glassdoor} className="linkIcn glassdoorIcn " /></a>
+                                <a href="https://www.facebook.com/RAKS-Group-LLC-594532424379987/" target="_blank" rel="noopener noreferrer" ><img alt="this is some alternative text." src={fb} className="linkIcn" /></a>
+                                <a href="https://twitter.com/GroupRaks" target="_blank" rel="noopener noreferrer" ><img alt="this is some alternative text." src={twitter} className="linkIcn" /></a>
                             </p>
                         </div>
                     </div>

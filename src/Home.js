@@ -72,6 +72,9 @@ export default class Home extends Component {
                         }, 1100)
                         break;
                     }
+                    default:{
+                        break;
+                    }
                 }
                 homeId++;
             }
@@ -90,22 +93,22 @@ export default class Home extends Component {
                     <div className="home" >
                         <div id="home1" >
                             <div id="heading1" className="headingDiv" >
-                                <p className="heading" >We Are</p>
+                                <p className="heading" >WE ARE</p>
                                 <p className="heading raks " style={{ fontWeight: "600" }}> <span style={{color:"#fb4e2e"}} >RAKS </span>GROUP </p>
-                                <p className="heading" style={{fontSize: "1.5em" }}> Staffing / Product Development / IT Services </p>
+                                <p className="tagline "> Staffing / Product Development / IT Services </p>
                                 <NavLink to="/about" className="exploreBtn" > Explore </NavLink>
                             </div>
                         </div>
                         <div id="home2" >
                             <div id="heading2" className="headingDiv" >
                                 <p className="heading" style={{ fontWeight: "600", padding: "20px" }} ><span style={{color:"#fb4e2e"}} >US </span>STAFFING</p>
-                                <p className="heading">Right Talent on Right Time at the Right Price</p>
+                                <p className="tagline">Right Talent on Right Time at the Right Price</p>
                             </div>
                         </div>
                         <div id="home3" >
                             <div id="heading3" className="headingDiv" >
                                 <p className="heading" style={{ fontWeight: "600", padding: "20px" }} ><span style={{color:"#fb4e2e"}} >IT </span>SERVICES</p>
-                                <p className="heading">Developing Responsive Innovative End to End Services</p>
+                                <p className="tagline">Developing Responsive Innovative End to End Services</p>
                             </div>
                         </div>
                     </div>

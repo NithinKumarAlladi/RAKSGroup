@@ -71,7 +71,9 @@ export default class Career extends Component {
     render() {
         return (
             <div id="outerCareerDiv" className='outerCareerDiv' >
-                <p className='careerH' >CAREER</p>
+                <div className="careerHDiv" >
+                    <p className='careerH' >CAREER</p>
+                </div>
                 <div className="benifitsDiv" style={{paddingTop:"5%"}} >
                     <p className="benifitsH" >BENEFITS </p>
                     <p className="benifitsIntro" >We care about our employees and believe in work life balance, and support that balance with the following benefits:</p>
