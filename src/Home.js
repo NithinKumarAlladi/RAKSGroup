@@ -33,7 +33,6 @@ export default class Home extends Component {
         window.scrollTo(0, 0);
         let homeId = 1;
         const switchHomePage = () => {
-            console.log(homeId);
             if (document.getElementById('home1') || document.getElementById('home2') || document.getElementById('home3')) {
                 homeId = homeId > 3 ? homeId - 3 : homeId;
                 switch (homeId) {
@@ -73,6 +72,9 @@ export default class Home extends Component {
                         }, 1100)
                         break;
                     }
+                    default:{
+                        break;
+                    }
                 }
                 homeId++;
             }
@@ -91,22 +93,22 @@ export default class Home extends Component {
                     <div className="home" >
                         <div id="home1" >
                             <div id="heading1" className="headingDiv" >
-                                <p className="heading" >We Are</p>
+                                <p className="heading" >WE ARE</p>
                                 <p className="heading raks " style={{ fontWeight: "600" }}> <span style={{color:"#fb4e2e"}} >RAKS </span>GROUP </p>
-                                <p className="heading" style={{ fontStyle: "italic", fontSize: "1.5em" }}> PEOPLE, PROCESS, PRODUCT </p>
+                                <p className="tagline "> Staffing / Product Development / IT Services </p>
                                 <NavLink to="/about" className="exploreBtn" > Explore </NavLink>
                             </div>
                         </div>
                         <div id="home2" >
                             <div id="heading2" className="headingDiv" >
-                                <p className="heading" style={{ fontWeight: "600", padding: "20px" }} >US STAFFING</p>
-                                <p className="heading">Staffing redefined for client needs</p>
+                                <p className="heading" style={{ fontWeight: "600", padding: "20px" }} ><span style={{color:"#fb4e2e"}} >US </span>STAFFING</p>
+                                <p className="tagline">Right Talent on Right Time at the Right Price</p>
                             </div>
                         </div>
                         <div id="home3" >
                             <div id="heading3" className="headingDiv" >
-                                <p className="heading" style={{ fontWeight: "600", padding: "20px" }} >IT SERVICES</p>
-                                <p className="heading">Defining IT Services for the business</p>
+                                <p className="heading" style={{ fontWeight: "600", padding: "20px" }} ><span style={{color:"#fb4e2e"}} >IT </span>SERVICES</p>
+                                <p className="tagline">Developing Responsive Innovative End to End Services</p>
                             </div>
                         </div>
                     </div>
